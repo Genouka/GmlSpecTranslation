@@ -1,0 +1,1061 @@
+KEY=func_desc:animcurve_exists
+EN=This function returns if the given Animation Curve Asset or Animation Curve Struct exists and is a valid Animation Curve.
+
+KEY=func_desc:application_surface_is_draw_enabled
+EN=This function will return true if the automatic draw of the application surface is enabled.
+
+KEY=func_desc:array_shift
+EN=This function will remove the first element in the given array and return its value. If the array is empty undefined is returned.
+
+KEY=func_desc:asset_get_ids
+EN=This function returns an array containing IDs of all existing assets of given type.
+
+KEY=func_desc:asset_has_any_tag
+EN=This function checks if one or more tag strings is assigned to any asset from the Asset Browser. You supply either the asset name (as a string) or its asset index, as well as either a single tag string or an array where each item is a single tag string. If you supply an asset index value, then you will need to supply the optional asset type argument (a constant), as assets of different types can have the same index, even though they cannot have the same name.
+			
+
+KEY=func_desc:audio_sound_get_asset
+EN=This function returns the Sound Asset that was used to play the given Sound Instance ID.
+			
+			The sound must be active (i.e. currently playing) for this function to return the correct value, otherwise it will throw a fatal error.
+
+KEY=func_desc:audio_throw_on_error
+EN=This function can be used to toggle whether errors returned from the audio engine should throw runtime errors which abort the game.
+
+KEY=func_desc:buffer_copy_stride
+EN=This function can be used to copy multiple data entries from one buffer to another, with the ability to specify different strides between individual entries in both the source and the destination buffers. The function takes into account the types of both buffers. If a buffer has a fixed size or is not a wrap buffer, the copying process will stop when the read or write position exceeds the buffer's range. Initial read and write positions can be negative, in which case they are computed from the end of given buffer.
+
+KEY=func_desc:buffer_get_surface_depth
+EN=With this function you can write information from a surface's depth buffer to a given buffer. The buffer must have been created previously and should be a 1-byte aligned buffer large enough to store data for the surface you are going to write.
+
+KEY=func_desc:buffer_get_used_size
+EN=This function returns the used size of the given buffer. The used size is the number of bytes that have been written to the buffer.
+
+KEY=func_desc:buffer_set_surface_depth
+EN=This function copies data from a buffer into a surface's depth buffer.
+
+KEY=func_desc:camera_copy_transforms
+EN=This function will copy the transforms from one camera to another.
+
+KEY=func_desc:db_to_lin
+EN=Converts a gain in decibels (dB) to a linear gain.
+
+KEY=func_desc:dbg_add_font_glyphs
+EN=Adds a TTF font to be used in the debug rendering. The font should be added to the included files, the size of the font can be specified in pixels, and a font range can be selected (glyphs must be present in the given TTF font):
+			
+			* -1 - Default Latin range
+			
+			* 0 - Greek
+
+			* 1 - Korean
+
+			* 2 - Japanese
+
+			* 3 - Chinese Full
+			
+			* 4 - Chinese Simplified Common
+			
+			* 5 - Cyrillic
+			
+			* 6 - Thai
+			
+			* 7 - Vietnamese
+
+KEY=func_desc:dbg_button
+EN=Creates a button within the current debug section, the given method will be called when the button is pressed; it is not split into 2 columns but shown in a single column. NOTE: if no section is declared a "Default" section will be created.
+
+KEY=func_desc:dbg_checkbox
+EN=Creates a check box entry within the current debug section, variable will be a boolean value true or false. NOTE: if no section is declared a "Default" section will be created.
+
+KEY=func_desc:dbg_color
+EN=Creates a color entry within the current debug section, variable will be a color RGB value, no alpha. NOTE: if no section is declared a "Default" section will be created.
+
+KEY=func_desc:dbg_colour
+EN=Creates a colour entry within the current debug section, variable will be a colour RGB value, no alpha. NOTE: if no section is declared a "Default" section will be created.
+
+KEY=func_desc:dbg_control_delete
+EN=Delete a dbg_* control (slider, button, checkbox etc.) that has previously been created. Returns true if control is deleted, false otherwise.
+
+KEY=func_desc:dbg_control_exists
+EN=Checks if a dbg_* control (slider, button, checkbox etc.) exists. Returns true if control exists, false otherwise.
+
+KEY=func_desc:dbg_drop_down
+EN=Creates a drop down for a value within the current debug section, Either use an array of values (with an optional array of labels for those names) OR the values and names are declared as a comma delimited string - where integer values can be specified after a colon symbol so "Zero,One:10,Two:20" will create a 3 entry drop down that will set the variable to the value 0, 10 or 20 depending on which is selected. NOTE: if no section is declared a "Default" section will be created.
+
+KEY=func_desc:dbg_get_gamepad_input
+EN=Gets the status of gamepad input in the debug overlay a return of -1 indicates gamepad is disabled a return of `all` (-3) indicates gamepad input is enabled for all gamepads or any other number indicates that a specific gamepad is being used for debug overlay input
+
+KEY=func_desc:dbg_same_line
+EN=Causes the next debug control to be placed on the same line as the current debug control (if they are single column controls)
+
+KEY=func_desc:dbg_section
+EN=Declare a new debug section this will be added to the current debug view that is active. NOTE: if no debug view is active then a "Default" view is created for you.
+
+KEY=func_desc:dbg_section_delete
+EN=Delete a dbg_section that has previously been created. Returns true if section is deleted, false otherwise.
+
+KEY=func_desc:dbg_section_exists
+EN=Check to see if a dbg_section still exists
+
+KEY=func_desc:dbg_set_section
+EN=Sets the current active section to be the one given, any new controls will be added to this section.
+
+KEY=func_desc:dbg_set_view
+EN=Sets the current active view to be the one given, any new controls will be added to this view and the active section within that view.
+
+KEY=func_desc:dbg_slider
+EN=Creates a slider for a real value within the current debug section, minimum and maximum values can be specified. NOTE: if no section is declared a "Default" section will be created.
+
+KEY=func_desc:dbg_slider_int
+EN=Creates a slider for an integer value within the current debug section, minimum and maximum values can be specified. NOTE: if no section is declared a "Default" section will be created.
+
+KEY=func_desc:dbg_sprite
+EN=Creates a sprite view of the specified sprite with the specified index within the current debug section. NOTE: if no section is declared a "Default" section will be created.
+
+KEY=func_desc:dbg_sprite_button
+EN=Creates a button within the current debug section, the given method will be called when the button is pressed; it is not split into 2 columns but shown in a single column. The sprite is specified with the given reference, the width and height of the button specified in pixels (width and height of the sprite is used if not specified). Bits of the sprite can be displayed by specifying the x and y offset along with width and height (if none given then the whole sprite is used). NOTE: if no section is declared a "Default" section will be created.
+
+KEY=func_desc:dbg_text
+EN=Creates a text entry (from a variable) within the current debug section, this text can be multiline and is not split into 2 columns but shown in a single column. NOTE: if no section is declared a "Default" section will be created.
+
+KEY=func_desc:dbg_text_input
+EN=Creates a text input entry within the current debug section. NOTE: if no section is declared a "Default" section will be created.
+
+KEY=func_desc:dbg_text_separator
+EN=Creates a text separator entry (from a variable) within the current debug section, this text can be multiline and is not split into 2 columns but shown in a single column. NOTE: if no section is declared a "Default" section will be created.
+
+KEY=func_desc:dbg_view
+EN=Declare a new debug view that can be accessed from the debug overlay.
+
+KEY=func_desc:dbg_view_delete
+EN=Delete a dbg_view that has been previously been created. Returns true if section is deleted, false otherwise.
+
+KEY=func_desc:dbg_view_exists
+EN=Check to see if a dbg_view still exists.
+
+KEY=func_desc:dbg_watch
+EN=Creates a watch for any value within the current debug section, each value is converted to a string and displayed. NOTE: if no section is declared a "Default" section will be created.
+
+KEY=func_desc:debug_input_playback
+EN=Plays back a previously recorded input.
+
+KEY=func_desc:debug_input_record
+EN=Starts recording the input depending on the provided filter flags.
+
+KEY=func_desc:debug_input_save
+EN=Saves the input currently being recorded. This will stop the current recording.
+
+KEY=func_desc:display_get_frequency
+EN=This function returns the frequency (or refresh rate) of the display that the game is being played on. It will return a real value as frames-per-second, so for example if your monitor is 60hz you will get 60, if it's running at 144hz then you will get 144, and so on.
+
+KEY=func_desc:display_get_gui_height
+EN=With this function you can get the height (in pixels) of the GUI as used in the Draw GUI Event.
+
+KEY=func_desc:display_set_gui_maximise
+EN=This function sets the GUI layer's resolution to the size of the window, with optional scaling and offset parameters.
+
+KEY=func_desc:display_set_gui_maximize
+EN=This function sets the GUI layer's resolution to the size of the window, with optional scaling and offset parameters.
+
+KEY=func_desc:draw_clear_depth
+EN=This function can be used to clear the depth buffer of the current render target.
+
+KEY=func_desc:draw_clear_ext
+EN=This function can be used to clear colour, depth and stencil of the current render target.
+
+KEY=func_desc:draw_clear_stencil
+EN=This function can be used to clear the stencil buffer of the current render target.
+
+KEY=func_desc:draw_enable_skeleton_blend_override
+EN=This function is used to enable (true) or disable (false) whether the default blendmode is overridden if a skeletal sprite atlas uses premultiplied alpha.
+
+KEY=func_desc:draw_enable_skeleton_blendmodes
+EN=This function is used to enable (true) or disable (false) per-slot blend modes for skeletal sprites.
+
+KEY=func_desc:draw_enable_svg_aa
+EN=With this function you can enable or disable anti-aliasing (AA) for SVG format vector sprites. AA simply smooths the edges of vector images to give them a nicer look. The amount of AA used will depend on the value set using the function draw_set_svg_aa_level(). By default this is disabled.
+
+KEY=func_desc:draw_get_circle_precision
+EN=This function gets the precision GameMaker uses when drawing circles.
+
+KEY=func_desc:draw_get_enable_skeleton_blend_override
+EN=This function returns true if the default blend mode is overriden for skeletal sprites whose atlases use premultiplied alpha or false otherwise.
+
+KEY=func_desc:draw_get_enable_skeleton_blendmodes
+EN=This function returns whether per-slot blend modes for skeletal sprites are enabled (true) or disabled (false).
+
+KEY=func_desc:draw_get_svg_aa_level
+EN=This function can be used to get the anti-aliasing (AA) level for SVG format vector sprites. The return value will between 0 and 1 and shows how "smooth" the edges of these sprites will be drawn. You can set the AA level using the function draw_set_svg_aa_level().
+
+KEY=func_desc:draw_set_svg_aa_level
+EN=This function can be used to set the anti-aliasing (AA) level for SVG format vector sprites. This can be a real value from 0 to 1 and will "smooth" the edges of these sprites. Note that to see this effect, you must first have enabled AA using the function draw_enable_svg_aa().
+
+KEY=func_desc:ds_grid_to_mp_grid
+EN=This function can be used to convert a DS grid into an MP grid. You can also provide an optional predicate function argument to map the DS grid value to the corresponding MP grid value. If you don't provide a predicate function, the function will treat zero values as empty and non-zero values as occupied.
+
+KEY=func_desc:effect_create_depth
+EN=With this function you can create a simple effect at a specified depth.
+			
+			If the effect is anything other than ef_rain or ef_snow then you can define an x/y position to create the effect, and the size can be a value of 0, 1, or 2, where 0 is small, 1 is medium and 2 is large.
+
+KEY=func_desc:effect_create_layer
+EN=With this function you can create a simple effect on a specified layer.
+			
+			If the effect is anything other than ef_rain or ef_snow then you can define an x/y position to create the effect, and the size can be a value of 0, 1, or 2, where 0 is small, 1 is medium and 2 is large.
+
+KEY=func_desc:extension_exists
+EN=This function tells whether an extension with the given name exists (true) or not (false).
+
+KEY=func_desc:extension_get_option_count
+EN=This function returns the total number of options that exist in the extension with the given name. The function will return undefined if the provided extension name is invalid.
+
+KEY=func_desc:extension_get_option_names
+EN=This function returns an array containing the names of all the options that exist in the extension with the given name. The function will return undefined if the provided extension name is invalid.
+
+KEY=func_desc:extension_get_option_value
+EN=This function returns the value of the given option in the extension with the given name. The function will return undefined if the provided extension name is invalid.
+
+KEY=func_desc:extension_get_options
+EN=This function returns a struct containing all the options, and their values, for the extension with the given name. The function will return undefined if the provided extension name is invalid.
+
+KEY=func_desc:extension_get_version
+EN=This function gets the version of an Extension Asset with the given name, and returns it as a string formatted as "major.minor.revision".
+
+KEY=func_desc:flexpanel_calculate_layout
+EN=Calculates the layout for the selected node and its children.
+
+KEY=func_desc:flexpanel_create_node
+EN=Creates a Flexpanel node.
+
+KEY=func_desc:flexpanel_delete_node
+EN=Deletes a Flexpanel node.
+
+KEY=func_desc:flexpanel_get_rounding_scale
+EN=Gets the current scale factor used when rounding layout values.
+
+KEY=func_desc:flexpanel_node_get_child
+EN=Returns the child node of the given node either by index or name, undefined if out of range. If name is used then the search is done recursively through all the child nodes and the first matching node in a depth first traversal is returned.
+
+KEY=func_desc:flexpanel_node_get_child_hash
+EN=Returns the child node of the given node by its name or the hash of its name.
+
+KEY=func_desc:flexpanel_node_get_data
+EN=Returns the data struct of the given node.
+
+KEY=func_desc:flexpanel_node_get_measure_function
+EN=Returns the measure function of the given node. `undefined` means that measure function is not set on this node.
+
+KEY=func_desc:flexpanel_node_get_name
+EN=Returns the name of the given node, undefined if no name is set.
+
+KEY=func_desc:flexpanel_node_get_num_children
+EN=Returns the number of child nodes of the given node.
+
+KEY=func_desc:flexpanel_node_get_parent
+EN=Returns the parent of the given node, undefined if no parent.
+
+KEY=func_desc:flexpanel_node_get_struct
+EN=Returns the layout data of the given node as a struct. This is the same data that can be passed into flexpanel_create_node().
+
+KEY=func_desc:flexpanel_node_insert_child
+EN=Inserts the node as a child of the passed parent node.
+
+KEY=func_desc:flexpanel_node_layout_get_position
+EN=Returns the calculated node layout position as a struct: {left, top, width, height, bottom, right, hadOverflow, direction, paddingLeft, paddingRight, paddingTop, paddingBottom, marginLeft, marginRight, marginToip, marginBottom}.
+
+KEY=func_desc:flexpanel_node_remove_all_children
+EN=Removes all the children of the node.
+			
+			NOTE: Children are not deleted.
+
+KEY=func_desc:flexpanel_node_remove_child
+EN=Removes a child from the passed parent node.
+
+KEY=func_desc:flexpanel_node_set_measure_function
+EN=Sets the measure function of the node. When a layout is calculated and a measurement is required (there are various reasons why this may or may not happen, i.e. if parents have absolute widths and heights) then the given GML function will be called and it should return a struct with members `width` with the calculated width and/or `height` with the calculated height.
+
+KEY=func_desc:flexpanel_node_set_name
+EN=Sets the name of the node.
+
+KEY=func_desc:flexpanel_node_style_get_align_content
+EN=Gets the alignment of the content of the node.
+
+KEY=func_desc:flexpanel_node_style_get_align_items
+EN=Gets the alignment of the items of the node.
+
+KEY=func_desc:flexpanel_node_style_get_align_self
+EN=Gets the alignment of the selected node.
+
+KEY=func_desc:flexpanel_node_style_get_aspect_ratio
+EN=Gets the node's aspect ratio
+
+KEY=func_desc:flexpanel_node_style_get_border
+EN=Gets the border of the selected node.
+
+KEY=func_desc:flexpanel_node_style_get_direction
+EN=Gets the direction of the selected node.
+
+KEY=func_desc:flexpanel_node_style_get_display
+EN=Gets the display setting of the selected node.
+
+KEY=func_desc:flexpanel_node_style_get_flex
+EN=Gets the flex value of the selected node.
+
+KEY=func_desc:flexpanel_node_style_get_flex_basis
+EN=Gets the flex basis of the selected node.
+
+KEY=func_desc:flexpanel_node_style_get_flex_direction
+EN=Gets the flex direction of the selected node.
+
+KEY=func_desc:flexpanel_node_style_get_flex_grow
+EN=Gets the flex grow of the selected node.
+
+KEY=func_desc:flexpanel_node_style_get_flex_shrink
+EN=Gets the flex shrink of the selected node.
+
+KEY=func_desc:flexpanel_node_style_get_flex_wrap
+EN=Gets the flex wrap of the selected node.
+
+KEY=func_desc:flexpanel_node_style_get_gap
+EN=Gets the gap of the selected node on the selected side.
+
+KEY=func_desc:flexpanel_node_style_get_height
+EN=Gets the height of the selected node.
+
+KEY=func_desc:flexpanel_node_style_get_justify_content
+EN=Gets the node's contents justification
+
+KEY=func_desc:flexpanel_node_style_get_margin
+EN=Gets the margin of the selected node.
+
+KEY=func_desc:flexpanel_node_style_get_max_height
+EN=Gets the node's maximum height
+
+KEY=func_desc:flexpanel_node_style_get_max_width
+EN=Gets the node's maximum width
+
+KEY=func_desc:flexpanel_node_style_get_min_height
+EN=Gets the node's minimum height
+
+KEY=func_desc:flexpanel_node_style_get_min_width
+EN=Gets the node's minimum width
+
+KEY=func_desc:flexpanel_node_style_get_padding
+EN=Gets the padding of the selected node.
+
+KEY=func_desc:flexpanel_node_style_get_position
+EN=Gets the node's style position.
+
+KEY=func_desc:flexpanel_node_style_get_position_type
+EN=Gets the nodes position type
+
+KEY=func_desc:flexpanel_node_style_get_width
+EN=Gets the width of the selected node.
+
+KEY=func_desc:flexpanel_node_style_set_align_content
+EN=Sets the alignment of the content of the node.
+
+KEY=func_desc:flexpanel_node_style_set_align_items
+EN=Sets the alignment of the items of the node.
+
+KEY=func_desc:flexpanel_node_style_set_align_self
+EN=Sets the alignment of the selected node.
+
+KEY=func_desc:flexpanel_node_style_set_aspect_ratio
+EN=Sets the node's aspect ratio
+
+KEY=func_desc:flexpanel_node_style_set_border
+EN=Sets the border of the selected node.
+
+KEY=func_desc:flexpanel_node_style_set_direction
+EN=Sets the layout direction of the selected node.
+
+KEY=func_desc:flexpanel_node_style_set_display
+EN=Sets the display setting of the selected node.
+
+KEY=func_desc:flexpanel_node_style_set_flex
+EN=Sets the flex value of the selected node.
+
+KEY=func_desc:flexpanel_node_style_set_flex_basis
+EN=Sets the flex basis of the selected node.
+
+KEY=func_desc:flexpanel_node_style_set_flex_direction
+EN=Sets the flex direction of the selected node.
+
+KEY=func_desc:flexpanel_node_style_set_flex_grow
+EN=Sets the flex grow of the selected node.
+
+KEY=func_desc:flexpanel_node_style_set_flex_shrink
+EN=Sets the flex shrink of the selected node.
+
+KEY=func_desc:flexpanel_node_style_set_flex_wrap
+EN=Sets the flex wrap of the selected node.
+
+KEY=func_desc:flexpanel_node_style_set_gap
+EN=Sets the gap of the selected node for the selected gutters.
+
+KEY=func_desc:flexpanel_node_style_set_height
+EN=Sets the height of the selected node.
+
+KEY=func_desc:flexpanel_node_style_set_justify_content
+EN=Sets the node's contents justification
+
+KEY=func_desc:flexpanel_node_style_set_margin
+EN=Sets the margin of the selected node.
+
+KEY=func_desc:flexpanel_node_style_set_max_height
+EN=Sets the node's maximum height
+
+KEY=func_desc:flexpanel_node_style_set_max_width
+EN=Sets the node's maximum width
+
+KEY=func_desc:flexpanel_node_style_set_min_height
+EN=Sets the node's minimum height
+
+KEY=func_desc:flexpanel_node_style_set_min_width
+EN=Sets the node's minimum width
+
+KEY=func_desc:flexpanel_node_style_set_padding
+EN=Sets the padding of the selected node.
+
+KEY=func_desc:flexpanel_node_style_set_position
+EN=Sets an inset position on the node.
+
+KEY=func_desc:flexpanel_node_style_set_position_type
+EN=Sets the node's position type.
+
+KEY=func_desc:flexpanel_node_style_set_width
+EN=Sets the width of the selected node.
+
+KEY=func_desc:flexpanel_set_rounding_scale
+EN=Sets the scale factor used when rounding layout values. A value of 0 disables rounding.
+
+KEY=func_desc:font_cache_glyph
+EN=This function lets you pre-cache a character glyph from a font. If you don't pre-cache a character using this function, it's automatically cached before it's drawn for the first time.
+
+KEY=func_desc:font_enable_effects
+EN=With this function you can enable or disable built-in effects rendering for the specified font. Built-in effects will only have an effect with SDF-enabled fonts.
+
+KEY=func_desc:game_change
+EN=This function allows you to close the currently running title and launch another title, it will only work in VM and on certain platforms it will only work in a package build and not in run/debug.
+
+KEY=func_desc:gamepad_enumerate
+EN=Currently only functional on Android, this function will enumerate gamepads to detect any newly added gamepads and remove any recently removed ones without the need for BLUETOOTH_CONNECT permission.
+
+KEY=func_desc:gesture_get_rotate_angle
+EN=This function is used to get the angle which a pair of touches must exceed in order to trigger a Rotate Start Gesture event.
+
+KEY=func_desc:gpu_get_blendequation
+EN=This function can be used to retrieve the current blend equation being used for drawing.
+
+KEY=func_desc:gpu_get_blendequation_sepalpha
+EN=This function can be used to retrieve the current blend and alpha blend equations being used for drawing.
+
+KEY=func_desc:gpu_get_depth
+EN=This function returns the current depth (z coordinate) for 2D drawing functions. By default, it will be equal to the current layer's depth, but can be changed using gpu_set_depth.
+
+KEY=func_desc:gpu_get_scissor
+EN=This function can be used to get the current scissor region, returns a struct that contains {x, y, w, h}.
+
+KEY=func_desc:gpu_get_sprite_cull
+EN=With this function you can check to see whether sprite culling is enabled (returns true) or not (returns false).
+
+KEY=func_desc:gpu_get_stencil_depth_fail
+EN=This function can be used to retrieve the stencil operation executed when the stencil test passes but the depth test fails.
+
+KEY=func_desc:gpu_get_stencil_enable
+EN=This function can be used to retrieve whether the stencil test is currently enabled (returns true) or not (returns false).
+
+KEY=func_desc:gpu_get_stencil_fail
+EN=This function can be used to retrieve the stencil operation executed when the stencil test fails.
+
+KEY=func_desc:gpu_get_stencil_func
+EN=This function can be used to retrieve the current stencil test function.
+
+KEY=func_desc:gpu_get_stencil_pass
+EN=This function can be used to retrieve the stencil operation executed when both stencil and depth test pass.
+
+KEY=func_desc:gpu_get_stencil_read_mask
+EN=This function can be used to retrieve the current stencil test read mask value.
+
+KEY=func_desc:gpu_get_stencil_ref
+EN=This function can be used to retrieve the current stencil test reference value.
+
+KEY=func_desc:gpu_get_stencil_write_mask
+EN=This function can be used to retrieve the current stencil test write mask value.
+
+KEY=func_desc:gpu_get_tex_filter
+EN=With this function you can check to see whether texture filtering (linear interpolation) is enabled (returns true) or not (returns false).
+
+KEY=func_desc:gpu_get_tex_filter_ext
+EN=With this function you can check to see whether texture interpolation (linear interpolation) is enabled (returns true) or not (returns false) for a given shader sampler texture.
+
+KEY=func_desc:gpu_get_tex_repeat
+EN=With this function you can check to see whether texture repeating is enabled (returns true) or not (returns false).
+
+KEY=func_desc:gpu_get_tex_repeat_ext
+EN=With this function you can check to see whether texture repeating is enabled (returns true) or not (returns false) for a given shader sampler texture.
+
+KEY=func_desc:gpu_set_blendequation
+EN=With this function you can change how the final pixel is calculated from the source and destination.
+
+KEY=func_desc:gpu_set_blendequation_sepalpha
+EN=This function is the same as gpu_set_blendequation(), however it allows you to set two separate equations: the first one is used for the RGB components of the source and destination, and the second one is used for the alpha component.
+
+KEY=func_desc:gpu_set_depth
+EN=This function can be used to change the depth (z coordinate) for 2D drawing functions. By default, the layer's depth will be used.
+			
+			Note that GameMaker will only change the depth when it starts drawing a new layer, so you may want to restore the original value (from gpu_get_depth()) after you're done drawing.
+
+KEY=func_desc:gpu_set_scissor
+EN=This function can be used to set a scissor region that will clip all rendering to the current render target, all coordinates are in render target coordinate system. NOTE: All values are used as integers. NOTE: Each surface and viewport will reset the current scissor region (they are not stacked).
+
+KEY=func_desc:gpu_set_sprite_cull
+EN=This function will enable or disable sprite culling for your game (by default this is enabled). By switching sprite culling off you can avoid any problems with for example sprites not being drawn when using custom shaders that alter the position the sprite is drawn at.
+
+KEY=func_desc:gpu_set_stencil_depth_fail
+EN=This function can be used to set the stencil operation taken when the stencil test passes but the depth test fails.
+
+KEY=func_desc:gpu_set_stencil_enable
+EN=This function can be used to disable or enable the stencil test.
+
+KEY=func_desc:gpu_set_stencil_fail
+EN=This function can be used to set the stencil operation taken when the stencil test fails.
+
+KEY=func_desc:gpu_set_stencil_func
+EN=This function can be used to set the stencil test function.
+
+KEY=func_desc:gpu_set_stencil_pass
+EN=This function can be used to set the stencil operation taken when both the stencil and the depth test pass.
+
+KEY=func_desc:gpu_set_stencil_read_mask
+EN=This function can be used to set the stencil test read mask.
+
+KEY=func_desc:gpu_set_stencil_ref
+EN=This function can be used to set the stencil test reference value.
+
+KEY=func_desc:gpu_set_stencil_write_mask
+EN=This function can be used to set the stencil test write mask.
+
+KEY=func_desc:gpu_set_tex_filter
+EN=This function can be used to set the texture filtering (linear interpolation) of all images drawn on the game screen. When this is enabled (true) all textures will be smoothed when drawn (this includes sprites as they too are considered textures), meaning that when scaled or moved if there is not a 1:1 pixel ratio then there will be a "smudging" across various pixels which may make images appear blurry depending on the art style used. If this is disabled (false) then images will be drawn based on the nearest pixel when scaled or moving which may lead to "blocky" images. The default value is false, and this can also be changed in the Global Game Options for individual target platforms.
+
+KEY=func_desc:gpu_set_tex_filter_ext
+EN=This function can be used to set the linear interpolation for a single sampler "slot" when using Shaders in GameMaker. When this is enabled (true) the sampler texture will be smoothed and if this is disabled (false) then images will be drawn based on the nearest pixel. The default value is that set by the Global Game Options for your game, or that set using the function gpu_set_texfilter().
+
+KEY=func_desc:gpu_set_tex_repeat
+EN=This function can be used to indicate to GameMaker whether textures should repeat (true) or not (false) when used for models and primitives. Normally texture widths and heights lie in the range 0 - 1, but if you specify a value larger than 1 by default the rest is not drawn (the entire texture will be drawn with an "empty" section corresponding to the percentage over 1 that is used. So a value of 2 for a texture width or height would draw the texture in half the space and leave the other half empty). However, by using this function to set repeat to true the texture is repeated automatically over all models and primitives. The likely use case for these functions is for repeating a texture in 3D but in order for it to work and not pull images from the rest of the texture page, the sprite used will need to be marked as being on a "Separate Texture Page" in the Sprite Editor.
+
+KEY=func_desc:gpu_set_tex_repeat_ext
+EN=This function can be used to set whether a single sampler "slot" repeats the given texture when using Shaders in GameMaker. Setting it to true will repeat the texture if the uv coordinates are out with the 0-1 range, while a setting of false will mean no repeating. The likely use case for these functions is for repeating a texture in 3D but in order for it to work and not pull images from the rest of the texture page, the sprite used will need to be marked as being on a "Separate Texture Page" in the Sprite Editor.
+
+KEY=func_desc:handle_parse
+EN=This function will attempt to convert a string into a handle data type, to be used when a handle has been converted to a string and you want to convert it back.
+			
+			Note: No validation is done on the value returned so it is not guaranteed to be valid.
+
+KEY=func_desc:http_get_connect_timeout
+EN=This function returns the connection timeout value in milliseconds used for HTTP requests.
+
+KEY=func_desc:http_set_connect_timeout
+EN=This function sets the connection timeout used for HTTP requests. Any requests made after a call to this function will use this timeout.
+
+KEY=func_desc:is_debug_overlay_open
+EN=Returns true if the debug overlay is open and false otherwise
+
+KEY=func_desc:is_handle
+EN=This function returns whether a given variable is a handle that references an internal type.
+
+KEY=func_desc:is_keyboard_used_debug_overlay
+EN=Returns true if the keyboard is being used by the debug overlay system
+
+KEY=func_desc:is_mouse_over_debug_overlay
+EN=Returns true if the mouse is over a debug overlay window or gadget, or is being used by the debug sub-systems (i.e. for dragging)
+
+KEY=func_desc:keyboard_virtual_set_position
+EN=This Windows only function can be used to set the position of the virtual keyboard on the device running the game. The coordinates passed in are in display coordinates (use application_get_position() to find the game's position in this space).
+
+KEY=func_desc:layer_background_change
+EN=Using this function you can set the sprite index of the background element.
+
+KEY=func_desc:layer_get_flexpanel_node
+EN=This function retrieves the root-level flexpanel node on a UI layer.
+
+KEY=func_desc:layer_get_forced_depth
+EN=This function can be used to retrieve the Z depth set for rendering layers within the room.
+
+KEY=func_desc:layer_get_type
+EN=You can use this function to get the type of a given layer.
+
+KEY=func_desc:layer_particle_alpha
+EN=This function can be used to change alpha value of a particle system element. You supply the particle system element ID (which you can get using layer_particle_get_id()), and then set the new alpha value in range from 0 (transparent) to 1 (opaque).
+
+KEY=func_desc:layer_particle_angle
+EN=This function can be used to change angle of rotation of a particle system element. You supply the particle system element ID (which you can get using layer_particle_get_id()), and then set the new angle to use (in degrees).
+
+KEY=func_desc:layer_particle_blend
+EN=This function can be used to change blend colour of a particle system element. You supply the particle system element ID (which you can get using layer_particle_get_id()), and then set the new blend colour to use.
+
+KEY=func_desc:layer_particle_get_alpha
+EN=This function can be used to retrieve alpha value of a particle system element. You supply the particle system element ID (which you can get using layer_particle_get_id()) and the function returns a value in range from 0 (transparent) to 1 (opaque).
+
+KEY=func_desc:layer_particle_get_angle
+EN=This function can be used to retrieve rotation of a particle system element. You supply the particle system element ID (which you can get using layer_particle_get_id()) and the function returns the layer element's rotation in degrees.
+
+KEY=func_desc:layer_particle_get_blend
+EN=This function can be used to retrieve blend colour of a particle system element. You supply the particle system element ID (which you can get using layer_particle_get_id()) and the function returns the layer element's blend colour.
+
+KEY=func_desc:layer_particle_get_id
+EN=This function can be used to retrieve the unique ID value of a particle system element on a layer. You supply the layer ID (which you get when you create the layer using layer_create() or when you use the layer name along with layer_get_id()) and the name of the particle system element as defined in the Room Editor. The function will return the ID value associated with that particle system element on the layer.
+
+KEY=func_desc:layer_particle_get_instance
+EN=This function can be used to retrieve the unique ID of a particle system instance associated with a particle system element. You supply the particle system element ID (which you can get using layer_particle_get_id()) and the function returns the particle system instance ID associated with the layer element.
+
+KEY=func_desc:layer_particle_get_system
+EN=This function can be used to retrieve the particle system asset associated with a particle system element. You supply the particle system element ID (which you can get using layer_particle_get_id()) and the function returns the particle system asset associated with the layer element.
+
+KEY=func_desc:layer_particle_get_x
+EN=This function can be used to retrieve position on the x axis of a particle system element. You supply the particle system element ID (which you can get using layer_particle_get_id()) and the function returns the layer element's position on the x axis.
+
+KEY=func_desc:layer_particle_get_xscale
+EN=This function can be used to retrieve scaling on the x axis of a particle system element. You supply the particle system element ID (which you can get using layer_particle_get_id()) and the function returns the layer element's scale on the x axis.
+
+KEY=func_desc:layer_particle_get_y
+EN=This function can be used to retrieve position on the y axis of a particle system element. You supply the particle system element ID (which you can get using layer_particle_get_id()) and the function returns the layer element's position on the y axis.
+
+KEY=func_desc:layer_particle_get_yscale
+EN=This function can be used to retrieve scaling on the y axis of a particle system element. You supply the particle system element ID (which you can get using layer_particle_get_id()) and the function returns the layer element's scale on the y axis.
+
+KEY=func_desc:layer_particle_x
+EN=This function can be used to change position on the x axis of a particle system element. You supply the particle system element ID (which you can get using layer_particle_get_id()), and then set the x value to use (based on the room coordinates).
+
+KEY=func_desc:layer_particle_xscale
+EN=This function can be used to change scaling on the x axis of a particle system element. You supply the particle system element ID (which you can get using layer_particle_get_id()), and then set the new scale value to use (based on the room coordinates).
+
+KEY=func_desc:layer_particle_y
+EN=This function can be used to change position on the y axis of a particle system element. You supply the particle system element ID (which you can get using layer_particle_get_id()), and then set the y value to use (based on the room coordinates).
+
+KEY=func_desc:layer_particle_yscale
+EN=This function can be used to change scaling on the y axis of a particle system element. You supply the particle system element ID (which you can get using layer_particle_get_id()), and then set the new scale value to use (based on the room coordinates).
+
+KEY=func_desc:layer_text_alpha
+EN=This function controls the alpha (transparency) of the text element on the asset layer.
+
+KEY=func_desc:layer_text_angle
+EN=Using this function you can change the angle for the given text element on a layer. If you set a value greater than 360 this will be looped to bring it within the 0 - 359 range.
+
+KEY=func_desc:layer_text_blend
+EN=This function changes the blend colour of the given text element, similar to image_blend for an Object Instance.
+
+KEY=func_desc:layer_text_charspacing
+EN=Using this function you can change the character spacing of the given text element.
+
+KEY=func_desc:layer_text_create
+EN=With this function you can create a new text element on the specified layer.
+
+KEY=func_desc:layer_text_destroy
+EN=This function will destroy the given text element.
+
+KEY=func_desc:layer_text_exists
+EN=You can use this function to check and see if a text element exists on any given layer.
+
+KEY=func_desc:layer_text_font
+EN=Using this function you can change the font asset assigned to a given text element on a layer.
+
+KEY=func_desc:layer_text_frameh
+EN=Using this function you can change the height of the frame of the given text element.  This affects vertical alignment of the text.
+
+KEY=func_desc:layer_text_framew
+EN=Using this function you can change the width of the frame of the given text element. This only affects rendering when wrapping is enabled.
+
+KEY=func_desc:layer_text_get_alpha
+EN=This function can be used to get the alpha value of the text element.
+
+KEY=func_desc:layer_text_get_angle
+EN=This function can be used to get the rotation angle of the text element in the room.
+
+KEY=func_desc:layer_text_get_blend
+EN=This function can be used to get the blend colour of the text element.
+
+KEY=func_desc:layer_text_get_charspacing
+EN=This function can be used to get the character spacing of the text element in the room.
+
+KEY=func_desc:layer_text_get_font
+EN=This function can be used to get the font asset reference of the text element.
+
+KEY=func_desc:layer_text_get_frameh
+EN=This function can be used to get the height of the frame of the text element in the room.
+
+KEY=func_desc:layer_text_get_framew
+EN=This function can be used to get the width of the frame of the text element in the room.
+
+KEY=func_desc:layer_text_get_halign
+EN=This function can be used to get the horizontal alignment of the text element in the room.
+
+KEY=func_desc:layer_text_get_id
+EN=This function can be used to retrieve the unique ID value of a text element on a layer.
+
+KEY=func_desc:layer_text_get_linespacing
+EN=This function can be used to get the line spacing of the text element in the room.
+
+KEY=func_desc:layer_text_get_origin
+EN=This function can be used to get the frame origin value of the text element in the room. You give the text element ID (which you get when you create a text element using layer_text_create() or when you use the function layer_text_get_id()), and the function will return the origin value.
+
+KEY=func_desc:layer_text_get_paragraphspacing
+EN=This function can be used to get the paragraph spacing of the text element in the room.
+
+KEY=func_desc:layer_text_get_text
+EN=This function can be used to get the text string of the text element.
+
+KEY=func_desc:layer_text_get_valign
+EN=This function can be used to get the vertical alignment of the text element in the room.
+
+KEY=func_desc:layer_text_get_wrap
+EN=This function can be used to get whether wrapping is enabled for the text element in the room.
+
+KEY=func_desc:layer_text_get_wrapmode
+EN=This function can be used to get the wrapping mode for the text element in the room. You give the text element ID (which you get when you create a text element using layer_text_create() or when you use the function layer_text_get_id()), and the function will return the wrapping mode status.
+
+KEY=func_desc:layer_text_get_x
+EN=This function can be used to get the x position of the text element in the room.
+
+KEY=func_desc:layer_text_get_xorigin
+EN=This function can be used to get the x origin of the text element in the room.
+
+KEY=func_desc:layer_text_get_xscale
+EN=This function can be used to get the x scale of the text element in the room.
+
+KEY=func_desc:layer_text_get_y
+EN=This function can be used to get the y position of the text element in the room.
+
+KEY=func_desc:layer_text_get_yorigin
+EN=This function can be used to get the y origin of the text element in the room.
+
+KEY=func_desc:layer_text_get_yscale
+EN=This function can be used to get the y scale of the text element in the room.
+
+KEY=func_desc:layer_text_halign
+EN=Using this function you can change the horizontal alignment of the given text element.
+
+KEY=func_desc:layer_text_linespacing
+EN=Using this function you can change the line spacing of the given text element.
+
+KEY=func_desc:layer_text_origin
+EN=Using this function you can set the frame origin for the given text element. You give the text element ID (which you get when you create a text element using layer_text_create() or when you use the function layer_text_get_id()), and then set the origin value.
+
+KEY=func_desc:layer_text_paragraphspacing
+EN=Using this function you can change the paragraph spacing of the given text element.
+
+KEY=func_desc:layer_text_text
+EN=Using this function you can change the text string assigned to a given text element on a layer.
+
+KEY=func_desc:layer_text_valign
+EN=Using this function you can change the vertical alignment of the given text element.
+
+KEY=func_desc:layer_text_wrap
+EN=Using this function you can change whether wrapping is enabled for the given text element.
+
+KEY=func_desc:layer_text_wrapmode
+EN=Using this function you can set the wrapping mode for the given text element. You give the text element ID (which you get when you create a text element using layer_text_create() or when you use the function layer_text_get_id()), and then set the wrapping mode.
+
+KEY=func_desc:layer_text_x
+EN=This function controls the position along the x-axis of the room of the text element on the layer.
+
+KEY=func_desc:layer_text_xorigin
+EN=Using this function you can change the x position of the origin of the given text element.
+
+KEY=func_desc:layer_text_xscale
+EN=Using this function you can change whether the given text element on a layer should be scaled along the x axis or not.
+
+KEY=func_desc:layer_text_y
+EN=This function controls the position along the y-axis of the room of the text element on the layer.
+
+KEY=func_desc:layer_text_yorigin
+EN=Using this function you can change the y position of the origin of the given text element.
+
+KEY=func_desc:layer_text_yscale
+EN=Using this function you can change whether the given text element on a layer should be scaled along the y axis or not.
+
+KEY=func_desc:layer_tilemap_get_colmask
+EN=This function can be used to retrieve the sprite that is being used as the collision mask for this tilemap.
+
+KEY=func_desc:layer_tilemap_set_colmask
+EN=This function can be used to set the sprite that is being used as the collision mask for this tilemap. The dimensions of the sprite must match the dimensions of the sprite being used for the tileset. If the function succeeds it will return 0, if it fails it will return -1
+
+KEY=func_desc:lin_to_db
+EN=Converts a linear gain to a gain in decibels (dB).
+
+KEY=func_desc:mac_refresh_receipt_validation
+EN=This will attempt to re-validate the Mac AppStore receipt and will generate an async system event of type receipt_validation.
+
+KEY=func_desc:matrix_inverse
+EN=This function returns a new matrix that is the inverse of the matrix you pass it, or optionally writes the result to an existing matrix that you specify.
+
+KEY=func_desc:nameof
+EN=Returns the argument as a string, resolved at compile time.
+
+KEY=func_desc:os_request_permission
+EN=This function requests the OS for a specific permission. On Android the string should be formatted as "android.permission.<permission>". On GXgames you can request the permission "DeviceMotion" to request access to orientation information on certain browsers.
+
+KEY=func_desc:part_emitter_delay
+EN=With this function you can configure an emitter's delay before it bursts first particles when it is in a stream mode.
+
+KEY=func_desc:part_emitter_enable
+EN=With this function you can enable or disable a particle emitter. Disabled particle emitters are not updated nor rendered and they do not spawn new particles.
+
+KEY=func_desc:part_emitter_interval
+EN=With this function you can configure the interval between individual particle bursts when an emitter is in a stream mode.
+
+KEY=func_desc:part_emitter_relative
+EN=With this function you can enable relative mode for an emitter, which means that the number of particles it burst or streams becomes relative to its area.
+
+KEY=func_desc:part_particles_burst
+EN=This function allows you to burst all particles defined in a particle system asset at any position in the room.
+
+KEY=func_desc:part_system_angle
+EN=This function can be used to change the rotation of the particle system.
+
+KEY=func_desc:part_system_color
+EN=This function can be used to change color and alpha with which the particle system is blended.
+
+KEY=func_desc:part_system_colour
+EN=This function can be used to change colour and alpha with which the particle system is blended.
+
+KEY=func_desc:part_system_drawit
+EN=This function draws the given particle system.
+
+KEY=func_desc:part_system_get_info
+EN=This function is used to retrieve information for the given particle system instance.
+
+KEY=func_desc:part_system_global_space
+EN=This function can be used to enable global space particles. When enabled, particles keep their position and direction when the particle system is moved or rotated. This is by default disabled.
+
+KEY=func_desc:part_type_size_x
+EN=This function is used to configure particle size similarly to part_type_size(), except only for the x axis. You can use function part_type_size_y() to configure the size on the y axis separately as well.
+
+KEY=func_desc:part_type_size_y
+EN=This function is used to configure particle size similarly to part_type_size(), except only for the y axis. You can use function part_type_size_x() to configure the size on the x axis separately as well.
+
+KEY=func_desc:part_type_subimage
+EN=This function can be used to set a particle type to use a custom sub-image (frame) of a sprite. If the particle's sprite is animated, then this sub-image will be used as the starting frame of the animation.
+
+KEY=func_desc:particle_add
+EN=With this function you can create a new particle system assset from an info struct.
+
+KEY=func_desc:particle_delete
+EN=With this function you can delete a particle system asset.
+
+KEY=func_desc:particle_exists
+EN=With this function you can check to see if a particle system asset with the given index exists or not.
+
+KEY=func_desc:particle_get_info
+EN=This function is used to retrieve information for the given particle system asset or instance.
+
+KEY=func_desc:physics_debug
+EN=This function is used to toggle physics debug messages and errors.
+
+KEY=func_desc:physics_get_friction
+EN=This function gets the friction value of the given bound fixture (not the "base" fixture).
+
+KEY=func_desc:physics_particle_group_get_mass
+EN=With this function you can retrieve the mass of an entire group of particles.
+
+KEY=func_desc:physics_raycast
+EN=This function checks the physics fixtures of the objects given against the ray specified, it will return an array of structures that will give the hitPointX, hitPointY (the room coordinates of the intersection), normalX, normalY (the normal of the intersection), fraction (the normalised distance down the ray of the intersection) 
+
+KEY=func_desc:ref_create
+EN=Create a debug reference to a live variable
+
+KEY=func_desc:room_get_info
+EN=This function can be used to get all the information on a room. It returns a struct that contains data that has been requested, a room can be very large so this can take a long time to complete, and optionally some data can be omitted to speed it up.
+			
+			NOTE: Tilemap data is an array of all the tilemap indices stored as a one dimensional array of width * height, where an x, y entry is indexed as (y*width)+x
+
+KEY=func_desc:shader_reset
+EN=This function resets the shader used for drawing and should be called when you no longer wish to use the current shader (set using shader_set()).
+
+KEY=func_desc:shader_set_uniform_i_array
+EN=This function sets a shader constant to hold an array of values.
+
+KEY=func_desc:show_debug_log
+EN=This function can be used to switch on and off the standard debug log and console when testing your game and is disabled by default.
+
+KEY=func_desc:skeleton_animation_get_event_frames
+EN=This function can be used to retrieve all the frames for the given event, in the given animation.
+
+KEY=func_desc:sphere_is_visible
+EN=This function checks a sphere of radius r at position x,y,z against the current view frustum. Returns true if the sphere intersects or is contained in the view frustum and false if the sphere is completely outside the view frustum.
+
+KEY=func_desc:sprite_add_ext
+EN=With this function you can asynchronously add an image as a sprite, loading it from an external source where the image file to be loaded should always be in either *.png, *.gif, *.jpg/jpeg or *.json format (*json files are used for loading skeleton animation sprites made with Spine). This function will generate an Image Loaded asynchronous event when the sprite has been loaded.
+
+KEY=func_desc:sprite_get_convex_hull
+EN=This function is used to generate the points of a convex hull for the given sprite. The function returns an array of reals defining the points of the convex hull.
+
+KEY=func_desc:struct_exists
+EN=With this function you can check whether a variable exists within the given struct or not.
+
+KEY=func_desc:struct_exists_from_hash
+EN=With this function you can check whether a variable exists within the given struct or not.
+
+KEY=func_desc:struct_foreach
+EN=With this function you can execute a method on all of the members in the struct.
+
+KEY=func_desc:struct_get
+EN=With this function you can get the value from a given named variable within a struct. The function will return the value held by the variable or undefined if the named variable does not exist.
+
+KEY=func_desc:struct_get_from_hash
+EN=With this function you can get the value from a given named variable within a struct. The function will return the value held by the variable or undefined if the named variable does not exist.
+
+KEY=func_desc:struct_get_names
+EN=With this function you can retrieve an array populated with the variable names from a struct.
+
+KEY=func_desc:struct_names_count
+EN=With this function you can find the total number of variables defined for a struct. The function will return an integer value for the number of variables encountered, or -1 if no struct of the given ID exists.
+
+KEY=func_desc:struct_remove
+EN=With this function you can remove a variable from a struct.
+
+KEY=func_desc:struct_remove_from_hash
+EN=With this function you can remove a variable from a struct.
+
+KEY=func_desc:struct_set
+EN=With this function you can set the value of a given variable in a struct. If the variable does not exist already in the struct it will be created and then assigned the value.
+
+KEY=func_desc:struct_set_from_hash
+EN=With this function you can set the value of a given variable in a struct. If the variable does not exist already in the struct it will be created and then assigned the value.
+
+KEY=func_desc:surface_get_format
+EN=This function returns the format of the given surface. All formats are listed in our manual.
+
+KEY=func_desc:surface_get_target_depth
+EN=This function can be used to retrieve the ID of the surface whose depth buffer is set as the current one.
+
+KEY=func_desc:surface_get_texture_depth
+EN=This function returns the depth texture of the given surface or -1 if no depth texture exists.
+
+KEY=func_desc:surface_has_depth
+EN=This function returns whether the given surface has a depth buffer (and by relation, a stencil buffer, as depth buffer creation needs to be enabled for stencil buffers to also be created).
+
+KEY=func_desc:texturegroup_add
+EN=Add a new texturegroup with name `groupname` that contains either single image file or an array of image files (the image files are any of the formats that `sprite_add` can accept). Assets will be created based on the description in the struct (or json string) in the last parameter. Buffers can be used in place of filenames, any buffer used should NOT be deleted until the texturegroup is deleted, the user is responsibile for deleting them after that.
+
+KEY=func_desc:texturegroup_delete
+EN=Deletes a texturegroup with name `groupname`, only texturegroups created with texturegroup_add can be deleted.
+
+KEY=func_desc:texturegroup_exists
+EN=With this function you can see whether a texture group with the specified name exists.
+
+KEY=func_desc:texturegroup_get_names
+EN=With this function you can retrieve the names of all the texturegroups contained in the game.
+
+KEY=func_desc:variable_clone
+EN=This function can accept any kind of data as its first parameter, which represents the variable or data structure to be cloned (won't work for instances). The second parameter, "depth" is applicable only for arrays and structs and sets the level of depth to which the cloning process should be performed (with a maximum value of 128).
+
+KEY=func_desc:variable_get_hash
+EN=With this function you can compute the hash of a given struct or instance member allowing for faster access (see struct_get_from_hash() and struct_set_from_hash()).
+
+KEY=func_desc:vector_sprite_cache_get_limit
+EN=This function returns the current maximum size of the SWF and SVG vector sprite cache.
+
+KEY=func_desc:vector_sprite_cache_get_max_used
+EN=This function returns the maximum amount of memory which has been used by the SWF and SVG vector sprite cache. This value is reset if the cache size is changed by vector_sprite_get_cache_limit().
+
+KEY=func_desc:vector_sprite_cache_get_oldest_entry_age
+EN=This function returns how long ago the oldest entry in the SWF and SVG vector sprite cache was last used. This can be useful for determining if the cache is set to an appropriate size.
+
+KEY=func_desc:vector_sprite_cache_get_prune_age
+EN=This function returns the number of frames an entry in the SWF and SVG vector sprite cache can exist without being used before it is considered for deletion.
+
+KEY=func_desc:vector_sprite_cache_get_prune_fraction
+EN=This function returns the fraction of the SWF and SVG vector sprite cache that is attempted to be cleared each frame.
+
+KEY=func_desc:vector_sprite_cache_get_used
+EN=This function returns the current amount of memory used by the SWF and SVG vector sprite cache.
+
+KEY=func_desc:vector_sprite_cache_limit
+EN=This function can be used to set the maximum size of the cache used to accelerate the drawing of SWF and SVG format vector sprites. This can be a value of 0 or greater. A value of 0 will disable the cache. Changing this value will reset the return value of vector_sprite_get_cache_max_used().
+
+KEY=func_desc:vector_sprite_cache_prune_age
+EN=This function sets how long entries in the SWF and SVG vector sprite cache must not have been used for before being deleted by the automatic pruning logic. This value is measured in frames and should be 0 or greater.
+
+KEY=func_desc:vector_sprite_cache_prune_fraction
+EN=This function sets what fraction of the SWF and SVG vector sprite cache is attempted to be cleared each frame. This can be a value between 0.0 and 1.0 (a value of 0.0 will disabled automatic pruning). This will only attempt to clear cache entries that are older than the number of frames specified by vector_sprite_cache_prune_age().
+
+KEY=func_desc:vertex_buffer_exists
+EN=This function will check whether the given buffer exists in memory or not. If it does, the function will return true, otherwise it will return false.
+
+KEY=func_desc:vertex_format_exists
+EN=This function will check whether the given vertex format exists in memory or not. If it does, the function will return true, otherwise it will return false.
+
+KEY=func_desc:vertex_format_get_info
+EN=This function is used to retrieve information for the given vertex format.
+
+KEY=func_desc:vertex_submit_ext
+EN=This function submits a range of vertices in the given vertex buffer to the graphics pipeline for drawing.
+
+KEY=func_desc:vertex_update_buffer_from_buffer
+EN=This function updates contents of a vertex buffer using data from a regular buffer. The vertex buffer must not be frozen!
+
+KEY=func_desc:vertex_update_buffer_from_vertex
+EN=This function updates contents of a vertex buffer using contents of another vertex buffer. The vertex buffers must not be frozen!
+
+KEY=func_desc:wallpaper_set_config
+EN=Set config for live wallpaper
+
+KEY=func_desc:wallpaper_set_subscriptions
+EN=Set subscriptions for live wallpaper
+
+KEY=func_desc:weak_ref_alive
+EN=With this function you can check the weak reference to a struct to see if it is still "alive" or not.
+
+KEY=func_desc:window_enable_borderless_fullscreen
+EN=With this function you can enable borderless fullscreen mode which uses a borderless window when switching to fullscreen rather than making the game take over exclusive use of the display.
+			
+			Note that this will only take effect on the next switch to fullscreen (so if the game is currently running in fullscreen then nothing will immediately change).
+
+KEY=func_desc:window_get_borderless_fullscreen
+EN=This function returns whether fullscreen mode uses a borderless window or whether the game takes exclusive control of the display.
+
+KEY=func_desc:window_get_showborder
+EN=Returns whether the border around the window is shown in windowed mode.
+
+KEY=func_desc:window_minimise
+EN=This function minimises the game window. You can restore it with window_restore().
+
+KEY=func_desc:window_minimize
+EN=This function minimizes the game window. You can restore it with window_restore().
+
+KEY=func_desc:window_mouse_get_delta_x
+EN=Returns how many pixels the mouse cursor has moved on the x axis since the last frame.
+
+KEY=func_desc:window_mouse_get_delta_y
+EN=Returns how many pixels the mouse cursor has moved on the y axis since the last frame.
+
+KEY=func_desc:window_mouse_get_locked
+EN=Returns whether the mouse cursor was locked using function window_mouse_set_locked.
+
+KEY=func_desc:window_mouse_set_locked
+EN=With this function you can enable or disable mouse lock. When enabled, the mouse cursor is hidden and locked at the center of the window. When disabled, the mouse cursor is shown and unlocked. While the cursor is locked, you can still use functions window_mouse_get_delta_x() and window_mouse_get_delta_y() to retrieve how much has it moved since the last frame.
+
+KEY=func_desc:window_post_message
+EN=This function is for the GX.games target and is used to send a message to the host window containing the game. It takes a string which is sent to the host iframe.
+
+KEY=func_desc:window_restore
+EN=This function restores the game window which may have been minimised by the user or using the function window_minimise().
+
+KEY=func_desc:window_set_showborder
+EN=Sets whether the border around the window is shown in windowed mode.
+
+KEY=func_desc:zip_add_file
+EN=This function will add a reference to the specified source file with the desired destination path in the specified zip file.
+
+KEY=func_desc:zip_create
+EN=This function will create a new zip object which files can be added to.
+
+KEY=func_desc:zip_save
+EN=This function will save a zip object to the specified path.
+
+KEY=func_desc:zip_unzip_async
+EN=This function will open a stored zip file and extract its contents to the given directory asynchronously.
+

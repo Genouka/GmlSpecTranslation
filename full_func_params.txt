@@ -1,0 +1,1839 @@
+KEY=func_param:animcurve_exists:curve_struct_or_id
+EN=The Animation Curve asset or struct that will be checked.
+
+KEY=func_param:array_shift:array
+EN=The variable that holds the array.
+
+KEY=func_param:asset_get_ids:asset_type
+EN=The type of assets to retrieve an array of.
+
+KEY=func_param:asset_get_type:name_or_ref
+EN=The name of or a reference to the game asset to get the type of.
+
+KEY=func_param:asset_has_any_tag:asset_name_or_id
+EN=The name of the asset (a string) or its index value (an integer).
+
+KEY=func_param:asset_has_any_tag:asset_type
+EN=OPTIONAL! The type of asset to check the tags for, only used when supplying an index for the first argument.
+
+KEY=func_param:asset_has_any_tag:tags
+EN=A single asset tag string or an array with various asset tags.
+
+KEY=func_param:audio_destroy_stream:sound
+EN=The sound asset, as returned by audio_create_stream.
+
+KEY=func_param:audio_emitter_gain:time
+EN=The length for the change in gain in milliseconds.
+
+KEY=func_param:audio_sound_get_asset:index
+EN=The voice index of the sound.
+
+KEY=func_param:audio_throw_on_error:enable
+EN=Enable or disable throwing.
+
+KEY=func_param:buffer_copy_stride:dest_buffer
+EN=The index of the buffer to copy to.
+
+KEY=func_param:buffer_copy_stride:dest_offset
+EN=The offset position to copy the data to (in bytes). If negative, then the offset is computed from the end of the buffer.
+
+KEY=func_param:buffer_copy_stride:dest_stride
+EN=The desired stride between entries when copied to the destination buffer (in bytes). If negative, then the destination buffer is traversed backwards.
+
+KEY=func_param:buffer_copy_stride:src_buffer
+EN=The index of the buffer to copy from.
+
+KEY=func_param:buffer_copy_stride:src_count
+EN=The number of data entries to copy. Must be a non-negative value.
+
+KEY=func_param:buffer_copy_stride:src_offset
+EN=The data offset to start copying from (in bytes). If negative, then the offset is computed from the end of the buffer.
+
+KEY=func_param:buffer_copy_stride:src_size
+EN=The size of a single data entry (in bytes). Must be a non-negative value.
+
+KEY=func_param:buffer_copy_stride:src_stride
+EN=The number of bytes from the beginning of one entry to the beginning of the following entry in the source buffer. If negative, then the source buffer is traversed backwards.
+
+KEY=func_param:buffer_get_surface_depth:buffer
+EN=The index of the buffer to use.
+
+KEY=func_param:buffer_get_surface_depth:offset
+EN=The data offset value (in bytes).
+
+KEY=func_param:buffer_get_surface_depth:surface
+EN=The index of the surface whose depth buffer to use.
+
+KEY=func_param:buffer_get_used_size:buffer
+EN=The index of the buffer to use.
+
+KEY=func_param:buffer_set_surface_depth:buffer
+EN=The index of the buffer to use.
+
+KEY=func_param:buffer_set_surface_depth:offset
+EN=The data offset value.
+
+KEY=func_param:buffer_set_surface_depth:surface
+EN=The index of the surface whose depth buffer to use.
+
+KEY=func_param:camera_copy_transforms:dest_camera_id
+EN=The unique camera ID value for the camera the values will be copied to.
+
+KEY=func_param:camera_copy_transforms:src_camera_id
+EN=The unique camera ID value for the camera the values will be copied from.
+
+KEY=func_param:camera_set_view_target:id
+EN=Instance or object to have the camera target for following
+
+KEY=func_param:choose:val1
+EN=An input value that can be string, integer, variable or constant.
+
+KEY=func_param:db_to_lin:x
+EN=The value to convert.
+
+KEY=func_param:dbg_add_font_glyphs:filename
+EN=filename of a TTF file to use
+
+KEY=func_param:dbg_add_font_glyphs:fontRange
+EN=fontRange type (default is -1 - Latin range)
+
+KEY=func_param:dbg_add_font_glyphs:size
+EN=size of the font in pixels(default is 13)
+
+KEY=func_param:dbg_button:dbgref
+EN=reference to the function to call
+
+KEY=func_param:dbg_button:height
+EN=height of button in pixels.
+
+KEY=func_param:dbg_button:label
+EN=label to use.
+
+KEY=func_param:dbg_button:width
+EN=width of button in pixels.
+
+KEY=func_param:dbg_checkbox:dbgref
+EN=reference to the variable to change or array of references to variables
+
+KEY=func_param:dbg_checkbox:label
+EN=label to use.
+
+KEY=func_param:dbg_color:dbgref
+EN=reference to the variable to change or array of references to variables
+
+KEY=func_param:dbg_color:label
+EN=label to use.
+
+KEY=func_param:dbg_colour:dbgref
+EN=reference to the variable to change or array of references to variables
+
+KEY=func_param:dbg_colour:label
+EN=label to use.
+
+KEY=func_param:dbg_control_delete:section
+EN=handle to the control
+
+KEY=func_param:dbg_control_exists:section
+EN=handle to the control
+
+KEY=func_param:dbg_drop_down:dbgref
+EN=reference to the variable to change or array of references to variables
+
+KEY=func_param:dbg_drop_down:label
+EN=label to use.
+
+KEY=func_param:dbg_drop_down:labelOrArrayOfLabels
+EN=label to use or array of Labels (previous argument needs to be an array)
+
+KEY=func_param:dbg_drop_down:specifierOrArrayOfValues
+EN=dropdown specifier or array of values
+
+KEY=func_param:dbg_section:name
+EN=name of the debug section
+
+KEY=func_param:dbg_section:open
+EN=true if section is open when created, false if closed, defaults to true
+
+KEY=func_param:dbg_section_delete:section
+EN=handle to the section
+
+KEY=func_param:dbg_section_exists:section
+EN=handle to the section
+
+KEY=func_param:dbg_set_section:section
+EN=handle to the section
+
+KEY=func_param:dbg_set_view:view
+EN=handle to the view
+
+KEY=func_param:dbg_slider:dbgref
+EN=reference to the variable to change or array of references to variables
+
+KEY=func_param:dbg_slider:label
+EN=label to use.
+
+KEY=func_param:dbg_slider:maximum
+EN=maximum value
+
+KEY=func_param:dbg_slider:minimum
+EN=minimum value
+
+KEY=func_param:dbg_slider:step
+EN=step value (numbers <=0 indicate no step).
+
+KEY=func_param:dbg_slider_int:dbgref
+EN=reference to the variable to change or array of references to variables
+
+KEY=func_param:dbg_slider_int:label
+EN=label to use.
+
+KEY=func_param:dbg_slider_int:maximum
+EN=maximum value
+
+KEY=func_param:dbg_slider_int:minimum
+EN=minimum value
+
+KEY=func_param:dbg_slider_int:step
+EN=step value (numbers <=0 indicate no step).
+
+KEY=func_param:dbg_sprite:dbgrefSprite
+EN=reference to the variable for the sprite index or array of references to variables
+
+KEY=func_param:dbg_sprite:dbgrefSpriteIndex
+EN=reference to the variable for the image index or array of references to variables
+
+KEY=func_param:dbg_sprite:height
+EN=height draw the sprite at, default is height of the sprite (or uses a given width to maintain correct ratio of width to height)
+
+KEY=func_param:dbg_sprite:label
+EN=label to use.
+
+KEY=func_param:dbg_sprite:width
+EN=width to draw the sprite at, if no height given then maintains the correct ratio for the sprite, default is width of the sprite
+
+KEY=func_param:dbg_sprite_button:dbgref
+EN=reference to the function to call
+
+KEY=func_param:dbg_sprite_button:dbgrefSprite
+EN=reference to the variable for the sprite index or array of references to variables
+
+KEY=func_param:dbg_sprite_button:dbgrefSpriteIndex
+EN=reference to the variable for the image index or array of references to variables
+
+KEY=func_param:dbg_sprite_button:height
+EN=height of button in pixels.
+
+KEY=func_param:dbg_sprite_button:heightSprite
+EN=height of the sprite in pixels.
+
+KEY=func_param:dbg_sprite_button:width
+EN=width of button in pixels.
+
+KEY=func_param:dbg_sprite_button:widthSprite
+EN=width of the sprite in pixels.
+
+KEY=func_param:dbg_sprite_button:xoffset
+EN=xoffset into the sprite in pixels.
+
+KEY=func_param:dbg_sprite_button:yoffset
+EN=yoffset into the sprite in pixels.
+
+KEY=func_param:dbg_text:dbgref
+EN=reference to the variable to change or array of references to variables, or a string to show
+
+KEY=func_param:dbg_text_input:dbgref
+EN=reference to the variable to change or array of references to variables
+
+KEY=func_param:dbg_text_input:label
+EN=label to use.
+
+KEY=func_param:dbg_text_input:type
+EN=type to store value as, default is string, use "s" or "t" for string, use "i" or "d" for integer, use "f", "r" or "g" for real
+
+KEY=func_param:dbg_text_separator:align
+EN=alignment of the text separator (0=left, 1=centre, 2=right) defaults to left alignment
+
+KEY=func_param:dbg_text_separator:dbgref
+EN=reference to the variable to change or array of references to variables or a string to show
+
+KEY=func_param:dbg_view:height
+EN=height of the view window, default is 400
+
+KEY=func_param:dbg_view:name
+EN=name of the debug view
+
+KEY=func_param:dbg_view:visible
+EN=true if view is visible, false otherwise
+
+KEY=func_param:dbg_view:width
+EN=width of the view window, default is 500
+
+KEY=func_param:dbg_view:x
+EN=x position to place the view window, -1 means position anywhere
+
+KEY=func_param:dbg_view:y
+EN=y position to place the view window, -1 means position anywhere
+
+KEY=func_param:dbg_view_delete:view
+EN=handle to the view
+
+KEY=func_param:dbg_view_exists:view
+EN=handle to the view
+
+KEY=func_param:dbg_watch:dbgref
+EN=reference to the variable to change or array of references to variables
+
+KEY=func_param:dbg_watch:label
+EN=label to use.
+
+KEY=func_param:debug_input_playback:filename
+EN=The path to the file containing a previously recorded input
+
+KEY=func_param:debug_input_record:filter
+EN=The input filter bit mask to use. This can be a combination of `debug_input_filter_` constants.
+
+KEY=func_param:debug_input_save:filename
+EN=The path to where the recorded input should be saved to.
+
+KEY=func_param:draw_clear_depth:depth
+EN=The value to clear the depth buffer with.
+
+KEY=func_param:draw_clear_ext:alpha
+EN=The alpha value to clear the current render target with. If undefined, then colour is not cleared. Must be specified if the argument col is not undefined.
+
+KEY=func_param:draw_clear_ext:col
+EN=The colour to clear the current render target with. If undefined, then colour is not cleared. Must be specified if the argument alpha is not undefined.
+
+KEY=func_param:draw_clear_ext:depth
+EN=The value to clear the depth buffer with. If undefined, then depth is not cleared.
+
+KEY=func_param:draw_clear_ext:stencil
+EN=The value to clear the stencil buffer with. If undeifned, then stencil is not cleared.
+
+KEY=func_param:draw_clear_stencil:stencil
+EN=The value to clear the stencil buffer with.
+
+KEY=func_param:draw_enable_svg_aa:enable
+EN=Enable (true) or disable (false) AA for all SVG sprites.
+
+KEY=func_param:draw_set_svg_aa_level:aa
+EN=The anti-aliasing value to use from 0 to 1.
+
+KEY=func_param:draw_tile:tileset
+EN=The ID of the tile set to use
+
+KEY=func_param:ds_grid_to_mp_grid:dest
+EN=The destination MP grid.
+
+KEY=func_param:ds_grid_to_mp_grid:func
+EN=A predicate function (that is passed the: grid value, cell x and cell y) and should return true (cell is ocupied) or false (cell is empty)
+
+KEY=func_param:ds_grid_to_mp_grid:src
+EN=The source DS grid.
+
+KEY=func_param:ds_list_copy:destination
+EN=The id of the list being copied to.
+
+KEY=func_param:ds_map_copy:destination
+EN=The id of the map you are copying to
+
+KEY=func_param:ds_map_secure_load_buffer:buffer
+EN=The buffer ID of the buffer to load the map data from.
+
+KEY=func_param:ds_priority_copy:destination
+EN=The id of the priority queue to copy to.
+
+KEY=func_param:ds_queue_copy:destination
+EN=The id of the NEW queue.
+
+KEY=func_param:ds_stack_copy:destination
+EN=The id of the NEW stack.
+
+KEY=func_param:effect_create_depth:colour
+EN=The colour of the effect.
+
+KEY=func_param:effect_create_depth:depth
+EN=The depth to assign the created effect to.
+
+KEY=func_param:effect_create_depth:kind
+EN=The kind of effect (use one of the constants listed above).
+
+KEY=func_param:effect_create_depth:size
+EN=The size of the effect.
+
+KEY=func_param:effect_create_depth:x
+EN=The x positioning of the effect if relevant.
+
+KEY=func_param:effect_create_depth:y
+EN=The y positioning of the effect if relevant.
+
+KEY=func_param:effect_create_layer:colour
+EN=The colour of the effect.
+
+KEY=func_param:effect_create_layer:kind
+EN=The kind of effect (use one of the constants listed above).
+
+KEY=func_param:effect_create_layer:layer_id
+EN=The layer ID (or name) to assign the created effect to.
+
+KEY=func_param:effect_create_layer:size
+EN=The size of the effect.
+
+KEY=func_param:effect_create_layer:x
+EN=The x positioning of the effect if relevant.
+
+KEY=func_param:effect_create_layer:y
+EN=The y positioning of the effect if relevant.
+
+KEY=func_param:extension_exists:extension_name
+EN=The name of your extension asset as a string
+
+KEY=func_param:extension_get_option_count:extension_name
+EN=The name of your extension asset as a string
+
+KEY=func_param:extension_get_option_names:extension_name
+EN=The name of your extension asset as a string
+
+KEY=func_param:extension_get_option_value:extension_name
+EN=The name of your extension asset as a string
+
+KEY=func_param:extension_get_option_value:option_name
+EN=The name of the option to read
+
+KEY=func_param:extension_get_options:extension_name
+EN=The name of your extension asset as a string
+
+KEY=func_param:extension_get_version:extension_name
+EN=The name of the extension
+
+KEY=func_param:flexpanel_calculate_layout:direction
+EN=The direction the layout calculation should follow.
+
+KEY=func_param:flexpanel_calculate_layout:height
+EN=The height of the area to calculate the layout over.
+
+KEY=func_param:flexpanel_calculate_layout:node
+EN=The node to start the layout calculations from.
+
+KEY=func_param:flexpanel_calculate_layout:width
+EN=The width of the area to calculate the layout over.
+
+KEY=func_param:flexpanel_create_node:struct_or_json
+EN=A struct or JSON string that describes style settings and child nodes to set up this flexpanel.
+
+KEY=func_param:flexpanel_delete_node:node
+EN=The node to be deleted.
+
+KEY=func_param:flexpanel_delete_node:recursive
+EN=Whether all child nodes should be deleted (false by default).
+
+KEY=func_param:flexpanel_node_get_child:indexOrName
+EN=The index of the child to get or a string of the name the node has been given.
+
+KEY=func_param:flexpanel_node_get_child:root
+EN=The node.
+
+KEY=func_param:flexpanel_node_get_child_hash:hashOrName
+EN=The hash of the child to get or a string of the name the node has been given.
+
+KEY=func_param:flexpanel_node_get_child_hash:root
+EN=The node.
+
+KEY=func_param:flexpanel_node_get_data:root
+EN=The node.
+
+KEY=func_param:flexpanel_node_get_measure_function:root
+EN=The node.
+
+KEY=func_param:flexpanel_node_get_name:root
+EN=The node.
+
+KEY=func_param:flexpanel_node_get_num_children:root
+EN=The node.
+
+KEY=func_param:flexpanel_node_get_parent:root
+EN=The node.
+
+KEY=func_param:flexpanel_node_get_struct:root
+EN=The node.
+
+KEY=func_param:flexpanel_node_insert_child:index
+EN=The index at which to insert the child.
+
+KEY=func_param:flexpanel_node_insert_child:node
+EN=The node to be inserted as a child.
+
+KEY=func_param:flexpanel_node_insert_child:root
+EN=The parent node.
+
+KEY=func_param:flexpanel_node_layout_get_position:node
+EN=The node to be queried.
+
+KEY=func_param:flexpanel_node_layout_get_position:relative
+EN=if true then returned coords in struct are relative to parent, otherwise they are absolute (and include parents position), default is true (so relative coords are returned)
+
+KEY=func_param:flexpanel_node_remove_all_children:root
+EN=The parent node.
+
+KEY=func_param:flexpanel_node_remove_child:node
+EN=The node to be removed as a child.
+
+KEY=func_param:flexpanel_node_remove_child:root
+EN=The parent node.
+
+KEY=func_param:flexpanel_node_set_measure_function:function
+EN=The function to be executed when calculate layout is done. Accepts the following arguments (width, widthType, height, heightType) the widthType and heightType are either 0 (undefined), 1 (exactly) or 2 (at most).
+
+KEY=func_param:flexpanel_node_set_measure_function:root
+EN=The node.
+
+KEY=func_param:flexpanel_node_set_name:name
+EN=The new name to set on the node.
+
+KEY=func_param:flexpanel_node_set_name:root
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_align_content:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_align_items:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_align_self:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_aspect_ratio:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_border:edge
+EN=The selected edge.
+
+KEY=func_param:flexpanel_node_style_get_border:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_direction:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_display:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_flex:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_flex_basis:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_flex_direction:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_flex_grow:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_flex_shrink:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_flex_wrap:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_gap:gutter
+EN=The selected gutter (column/row/all).
+
+KEY=func_param:flexpanel_node_style_get_gap:node
+EN=The node to be set.
+
+KEY=func_param:flexpanel_node_style_get_height:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_justify_content:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_margin:edge
+EN=The selected edge.
+
+KEY=func_param:flexpanel_node_style_get_margin:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_max_height:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_max_width:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_min_height:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_min_width:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_padding:edge
+EN=The selected edge.
+
+KEY=func_param:flexpanel_node_style_get_padding:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_position:edge
+EN=The selected edge.
+
+KEY=func_param:flexpanel_node_style_get_position:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_position_type:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_get_width:node
+EN=The node.
+
+KEY=func_param:flexpanel_node_style_set_align_content:align
+EN=The selected alignment.
+
+KEY=func_param:flexpanel_node_style_set_align_content:node
+EN=The node to be set.
+
+KEY=func_param:flexpanel_node_style_set_align_items:align
+EN=The selected alignment.
+
+KEY=func_param:flexpanel_node_style_set_align_items:node
+EN=The node to be set.
+
+KEY=func_param:flexpanel_node_style_set_align_self:align
+EN=The selected alignment.
+
+KEY=func_param:flexpanel_node_style_set_align_self:node
+EN=The node to be set.
+
+KEY=func_param:flexpanel_node_style_set_aspect_ratio:node
+EN=The node to set.
+
+KEY=func_param:flexpanel_node_style_set_aspect_ratio:value
+EN=The value
+
+KEY=func_param:flexpanel_node_style_set_border:edge
+EN=The selected edge.
+
+KEY=func_param:flexpanel_node_style_set_border:node
+EN=The node to be set.
+
+KEY=func_param:flexpanel_node_style_set_border:size
+EN=The selected border size
+
+KEY=func_param:flexpanel_node_style_set_direction:direction
+EN=The selected direction.
+
+KEY=func_param:flexpanel_node_style_set_direction:node
+EN=The node to be set.
+
+KEY=func_param:flexpanel_node_style_set_display:display
+EN=The selected display.
+
+KEY=func_param:flexpanel_node_style_set_display:node
+EN=The node to be set.
+
+KEY=func_param:flexpanel_node_style_set_flex:flex
+EN=The flex value for this
+
+KEY=func_param:flexpanel_node_style_set_flex:node
+EN=The node to be set
+
+KEY=func_param:flexpanel_node_style_set_flex_basis:node
+EN=The node to be set.
+
+KEY=func_param:flexpanel_node_style_set_flex_basis:unit
+EN=The units to be used
+
+KEY=func_param:flexpanel_node_style_set_flex_basis:value
+EN=The selected flex basis value
+
+KEY=func_param:flexpanel_node_style_set_flex_direction:direction
+EN=The selected direction.
+
+KEY=func_param:flexpanel_node_style_set_flex_direction:node
+EN=The node to be set.
+
+KEY=func_param:flexpanel_node_style_set_flex_grow:grow
+EN=The selected grow factor
+
+KEY=func_param:flexpanel_node_style_set_flex_grow:node
+EN=The node to be set.
+
+KEY=func_param:flexpanel_node_style_set_flex_shrink:node
+EN=The node to be set.
+
+KEY=func_param:flexpanel_node_style_set_flex_shrink:shrink
+EN=The selected shrink factor
+
+KEY=func_param:flexpanel_node_style_set_flex_wrap:align
+EN=The selected wrap.
+
+KEY=func_param:flexpanel_node_style_set_flex_wrap:node
+EN=The node to be set.
+
+KEY=func_param:flexpanel_node_style_set_gap:gutter
+EN=The selected gutter (column/row/all).
+
+KEY=func_param:flexpanel_node_style_set_gap:node
+EN=The node to be set.
+
+KEY=func_param:flexpanel_node_style_set_gap:size
+EN=The selected gap size
+
+KEY=func_param:flexpanel_node_style_set_height:height
+EN=The selected height.
+
+KEY=func_param:flexpanel_node_style_set_height:node
+EN=The node whose height should be set.
+
+KEY=func_param:flexpanel_node_style_set_height:unit
+EN=The units to use for the value
+
+KEY=func_param:flexpanel_node_style_set_justify_content:justify
+EN=The justification to use
+
+KEY=func_param:flexpanel_node_style_set_justify_content:node
+EN=The node to be set.
+
+KEY=func_param:flexpanel_node_style_set_margin:edge
+EN=The selected edge.
+
+KEY=func_param:flexpanel_node_style_set_margin:node
+EN=The node to be set.
+
+KEY=func_param:flexpanel_node_style_set_margin:size
+EN=The selected padding size
+
+KEY=func_param:flexpanel_node_style_set_margin:unit
+EN=The units to be used
+
+KEY=func_param:flexpanel_node_style_set_max_height:node
+EN=The node whose behaviour should be set.
+
+KEY=func_param:flexpanel_node_style_set_max_height:unit
+EN=The units to use for the value
+
+KEY=func_param:flexpanel_node_style_set_max_height:value
+EN=The value to use
+
+KEY=func_param:flexpanel_node_style_set_max_width:node
+EN=The node whose behaviour should be set.
+
+KEY=func_param:flexpanel_node_style_set_max_width:unit
+EN=The units to use for the value
+
+KEY=func_param:flexpanel_node_style_set_max_width:value
+EN=The value to use
+
+KEY=func_param:flexpanel_node_style_set_min_height:node
+EN=The node whose behaviour should be set.
+
+KEY=func_param:flexpanel_node_style_set_min_height:unit
+EN=The units to use for the value
+
+KEY=func_param:flexpanel_node_style_set_min_height:value
+EN=The value to use
+
+KEY=func_param:flexpanel_node_style_set_min_width:node
+EN=The node whose behaviour should be set.
+
+KEY=func_param:flexpanel_node_style_set_min_width:unit
+EN=The units to use for the value
+
+KEY=func_param:flexpanel_node_style_set_min_width:value
+EN=The value to use
+
+KEY=func_param:flexpanel_node_style_set_padding:edge
+EN=The selected edge.
+
+KEY=func_param:flexpanel_node_style_set_padding:node
+EN=The node to be set.
+
+KEY=func_param:flexpanel_node_style_set_padding:size
+EN=The selected padding size
+
+KEY=func_param:flexpanel_node_style_set_padding:unit
+EN=The units to be used
+
+KEY=func_param:flexpanel_node_style_set_position:edge
+EN=The selected edge.
+
+KEY=func_param:flexpanel_node_style_set_position:node
+EN=The node to be set.
+
+KEY=func_param:flexpanel_node_style_set_position:unit
+EN=The units to be used
+
+KEY=func_param:flexpanel_node_style_set_position:value
+EN=The value
+
+KEY=func_param:flexpanel_node_style_set_position_type:node
+EN=The node to be set.
+
+KEY=func_param:flexpanel_node_style_set_position_type:value
+EN=The position type to use
+
+KEY=func_param:flexpanel_node_style_set_width:node
+EN=The node whose width should be set.
+
+KEY=func_param:flexpanel_node_style_set_width:unit
+EN=The units to use for the value
+
+KEY=func_param:flexpanel_node_style_set_width:width
+EN=The selected width.
+
+KEY=func_param:flexpanel_set_rounding_scale:scaleFactor
+EN=Rounding scale factor. Default is 1.
+
+KEY=func_param:font_cache_glyph:font
+EN=The font to cache a character or glyph from
+
+KEY=func_param:font_cache_glyph:glyph_index
+EN=The index (or character code) of the glyph to cache (see ord()/string_ord_at())
+
+KEY=func_param:font_enable_effects:enable
+EN=Whether to enable (true) or disable (false) effects rendering for the specified font.
+
+KEY=func_param:font_enable_effects:ind
+EN=The index of the font.
+
+KEY=func_param:font_enable_effects:params
+EN=A struct containing any initial values for the font's effect parameters.
+
+KEY=func_param:fx_get_name:filter_or_effect
+EN=The FX struct to get the name of
+
+KEY=func_param:fx_get_parameter:filter_or_effect
+EN=The FX struct to get the parameter from
+
+KEY=func_param:fx_get_parameter_names:filter_or_effect
+EN=The FX struct to get the parameter names of
+
+KEY=func_param:fx_get_parameters:filter_or_effect
+EN=The FX struct to get the parameter from
+
+KEY=func_param:fx_get_single_layer:filter_or_effect
+EN=The FX struct to get the parameter from
+
+KEY=func_param:fx_set_parameter:filter_or_effect
+EN=The FX struct to modify
+
+KEY=func_param:fx_set_parameters:filter_or_effect
+EN=The FX struct to modify
+
+KEY=func_param:fx_set_single_layer:filter_or_effect
+EN=The FX struct to modify
+
+KEY=func_param:game_change:launch_parameters
+EN=Command line parameters to be passed to the new game.
+
+KEY=func_param:game_change:working_directory
+EN=The directory in which the new game will launch.
+
+KEY=func_param:gml_pragma:...
+EN=Optional argument or arguments for the given command.
+
+KEY=func_param:gpu_set_blendequation:equation
+EN=The blend equation to use
+
+KEY=func_param:gpu_set_blendequation_sepalpha:equation
+EN=The blend equation to use
+
+KEY=func_param:gpu_set_blendequation_sepalpha:equation_alpha
+EN=The alpha blend equation to use
+
+KEY=func_param:gpu_set_depth:depth
+EN=New drawing depth.
+
+KEY=func_param:gpu_set_scissor:h
+EN=height in render target pixels
+
+KEY=func_param:gpu_set_scissor:w
+EN=width in render target pixels
+
+KEY=func_param:gpu_set_scissor:xOrStruct
+EN=x coord OR a struct that contains {x, y, w, h}
+
+KEY=func_param:gpu_set_scissor:y
+EN=y coord
+
+KEY=func_param:gpu_set_sprite_cull:enable
+EN=Enable or disable sprite culling (true / false)
+
+KEY=func_param:gpu_set_stencil_depth_fail:stencil_op
+EN=The operation executed when the stencil test passes but the depth test fails.
+
+KEY=func_param:gpu_set_stencil_enable:enable
+EN=Enable or disable the stencil test (true or false).
+
+KEY=func_param:gpu_set_stencil_fail:stencil_op
+EN=The operation executed when the stencil test fails.
+
+KEY=func_param:gpu_set_stencil_func:cmp_func
+EN=The stencil test function.
+
+KEY=func_param:gpu_set_stencil_pass:stencil_op
+EN=The operation executed when both stencil and depth test pass.
+
+KEY=func_param:gpu_set_stencil_read_mask:read_mask
+EN=A mask that enables or disables reading of individual bits during stencil test.
+
+KEY=func_param:gpu_set_stencil_ref:ref
+EN=The stencil test reference value in range 0 to 255 (inclusive).
+
+KEY=func_param:gpu_set_stencil_write_mask:write_mask
+EN=A mask that enables or disables writing of individual bits during stencil test
+
+KEY=func_param:handle_parse:value_string
+EN=The string to convert.
+
+KEY=func_param:http_set_connect_timeout:connect_timeout_ms
+EN=The connect timeout (in milliseconds)
+
+KEY=func_param:instance_activate_all:collision_space
+EN=The collision space in which to consider instances, defaults to the collision space the calling instance is in.
+
+KEY=func_param:instance_activate_object:collision_space
+EN=The collision space in which to consider instances, defaults to the collision space the calling instance is in.
+
+KEY=func_param:instance_activate_region:collision_space
+EN=The collision space in which to consider instances, defaults to the collision space the calling instance is in.
+
+KEY=func_param:instance_deactivate_all:collision_space
+EN=The collision space in which to consider instances, defaults to the collision space the calling instance is in.
+
+KEY=func_param:instance_deactivate_object:collision_space
+EN=The collision space in which to consider instances, defaults to the collision space the calling instance is in.
+
+KEY=func_param:instance_deactivate_region:collision_space
+EN=The collision space in which to consider instances, defaults to the collision space the calling instance is in.
+
+KEY=func_param:is_handle:n
+EN=The argument to check.
+
+KEY=func_param:json_parse:filter
+EN=filter function called for each value element parsed in the data - function takes 2 arguments (key and value) and returns a value (this is the value that is then placed in the final output)
+
+KEY=func_param:json_parse:inhibit_string_convert
+EN=Enable or disable the automatic conversion of strings into handles / int64 / nans and infinities. (default is false)
+
+KEY=func_param:json_stringify:filter
+EN=filter function called for each value element encoded in the output - function takes 2 arguments (key and value) and returns a value (this is the value that is then placed in the final output)
+
+KEY=func_param:keyboard_virtual_set_position:x
+EN=x coordinate of the requested position.
+
+KEY=func_param:keyboard_virtual_set_position:y
+EN=y coordinate of the requested position.
+
+KEY=func_param:layer_background_htiled:htile
+EN=The horizontal tiling toggle, which can be true or false
+
+KEY=func_param:layer_background_vtiled:vtile
+EN=The vertical tiling toggle, which can be true or false
+
+KEY=func_param:layer_get_element_type:element_id
+EN=The unique ID value of the element to get the type of
+
+KEY=func_param:layer_get_flexpanel_node:layer_name
+EN=The unique name of the UI layer.
+
+KEY=func_param:layer_get_type:layer_id
+EN=The unique ID value of the layer to get the type of (or the layer name as a string)
+
+KEY=func_param:layer_particle_alpha:alpha
+EN=The new alpha value in range from 0 (transparent) to 1 (opaque)
+
+KEY=func_param:layer_particle_alpha:particle_element_id
+EN=The unique ID of the particle system element
+
+KEY=func_param:layer_particle_angle:angle
+EN=The new angle of rotation in degrees
+
+KEY=func_param:layer_particle_angle:particle_element_id
+EN=The unique ID of the particle system element
+
+KEY=func_param:layer_particle_blend:color
+EN=The new blend colour
+
+KEY=func_param:layer_particle_blend:particle_element_id
+EN=The unique ID of the particle system element
+
+KEY=func_param:layer_particle_get_alpha:particle_element_id
+EN=The unique ID of the particle system element
+
+KEY=func_param:layer_particle_get_angle:particle_element_id
+EN=The unique ID of the particle system element
+
+KEY=func_param:layer_particle_get_blend:particle_element_id
+EN=The unique ID of the particle system element
+
+KEY=func_param:layer_particle_get_id:layer_id
+EN=The unique ID value of the layer to target
+
+KEY=func_param:layer_particle_get_id:particle_element_name
+EN=The unique name of the particle system element on the layer as defined in the Room Editor
+
+KEY=func_param:layer_particle_get_instance:particle_element_id
+EN=The unique ID of the particle system element
+
+KEY=func_param:layer_particle_get_system:particle_element_id
+EN=The unique ID of the particle system element
+
+KEY=func_param:layer_particle_get_x:particle_element_id
+EN=The unique ID of the particle system element
+
+KEY=func_param:layer_particle_get_xscale:particle_element_id
+EN=The unique ID of the particle system element
+
+KEY=func_param:layer_particle_get_y:particle_element_id
+EN=The unique ID of the particle system element
+
+KEY=func_param:layer_particle_get_yscale:particle_element_id
+EN=The unique ID of the particle system element
+
+KEY=func_param:layer_particle_x:particle_element_id
+EN=The unique ID of the particle system element
+
+KEY=func_param:layer_particle_x:x
+EN=The new position on the x axis
+
+KEY=func_param:layer_particle_xscale:particle_element_id
+EN=The unique ID of the particle system element
+
+KEY=func_param:layer_particle_xscale:xscale
+EN=The new scale on the x axis
+
+KEY=func_param:layer_particle_y:particle_element_id
+EN=The unique ID of the particle system element
+
+KEY=func_param:layer_particle_y:y
+EN=The new position on the y axis
+
+KEY=func_param:layer_particle_yscale:particle_element_id
+EN=The unique ID of the particle system element
+
+KEY=func_param:layer_particle_yscale:yscale
+EN=The new scale on the y axis
+
+KEY=func_param:layer_set_fx:filter_or_effect
+EN=The FX struct to modify
+
+KEY=func_param:layer_text_alpha:alpha
+EN=The alpha for text element, from 0 to 1 (default is 1)
+
+KEY=func_param:layer_text_alpha:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_angle:angle
+EN=The angle of the text element (default is 0)
+
+KEY=func_param:layer_text_angle:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_blend:blend
+EN=The colour to draw the text element (default is c_white)
+
+KEY=func_param:layer_text_blend:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_charspacing:charspacing
+EN=The character spacing value (default is 0)
+
+KEY=func_param:layer_text_charspacing:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_create:font
+EN=The font to be used
+
+KEY=func_param:layer_text_create:layer_id
+EN=The unique ID value of the layer to target
+
+KEY=func_param:layer_text_create:text
+EN=The text string to be displayed
+
+KEY=func_param:layer_text_create:x
+EN=The x position to use
+
+KEY=func_param:layer_text_create:y
+EN=The y position to use
+
+KEY=func_param:layer_text_destroy:text_element_id
+EN=The unique ID value of the text element to be destroyed
+
+KEY=func_param:layer_text_exists:layer_id
+EN=The unique ID value of the layer to target (or the layer name as a string)
+
+KEY=func_param:layer_text_exists:text_element_id
+EN=The unique ID value of the text element to check
+
+KEY=func_param:layer_text_font:font
+EN=The new font to use
+
+KEY=func_param:layer_text_font:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_frameh:height
+EN=The frame height value (default is -1)
+
+KEY=func_param:layer_text_frameh:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_framew:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_framew:width
+EN=The frame width value (default is -1)
+
+KEY=func_param:layer_text_get_alpha:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_angle:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_blend:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_charspacing:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_font:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_frameh:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_framew:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_halign:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_id:layer_id
+EN=The unique ID value of the layer to target
+
+KEY=func_param:layer_text_get_id:text_element_name
+EN=The unique name of the text element on the layer as defined in the Room Editor
+
+KEY=func_param:layer_text_get_linespacing:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_origin:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_paragraphspacing:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_text:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_valign:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_wrap:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_wrapmode:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_x:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_xorigin:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_xscale:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_y:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_yorigin:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_get_yscale:text_element_id
+EN=The unique ID value of the text element to get the information from
+
+KEY=func_param:layer_text_halign:alignment
+EN=The alignment value (default is 0)
+
+KEY=func_param:layer_text_halign:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_linespacing:linespacing
+EN=The line spacing value (default is 0)
+
+KEY=func_param:layer_text_linespacing:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_origin:origin
+EN=The origin value (default is 0)
+
+KEY=func_param:layer_text_origin:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_paragraphspacing:paragraphspacing
+EN=The paragraph spacing value (default is 0)
+
+KEY=func_param:layer_text_paragraphspacing:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_text:text
+EN=The new text string to be displayed
+
+KEY=func_param:layer_text_text:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_valign:alignment
+EN=The alignment value (default is 0)
+
+KEY=func_param:layer_text_valign:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_wrap:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_wrap:wrap
+EN=True if wrapping is enabled or false if disabled (default is false)
+
+KEY=func_param:layer_text_wrapmode:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_wrapmode:wrapmode
+EN=The wrapping mode value (default is 0)
+
+KEY=func_param:layer_text_x:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_x:x
+EN=The x position for the text element
+
+KEY=func_param:layer_text_xorigin:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_xorigin:xorigin
+EN=The xorigin value (default is 0)
+
+KEY=func_param:layer_text_xscale:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_xscale:xscale
+EN=The xscale value (default is 1)
+
+KEY=func_param:layer_text_y:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_y:y
+EN=The y position for the text element
+
+KEY=func_param:layer_text_yorigin:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_yorigin:yorigin
+EN=The yorigin value (default is 0)
+
+KEY=func_param:layer_text_yscale:text_element_id
+EN=The unique ID value of the text element to change
+
+KEY=func_param:layer_text_yscale:yscale
+EN=The yscale value (default is 1)
+
+KEY=func_param:layer_tilemap_create:tileset
+EN=The tile set index to be used
+
+KEY=func_param:layer_tilemap_get_colmask:tilemap_element_id
+EN=The Id of the tilemap element for which you wish to know the colmask of.
+
+KEY=func_param:layer_tilemap_set_colmask:index
+EN=The index of the sprite to be used as the collision mask
+
+KEY=func_param:layer_tilemap_set_colmask:tilemap_element_id
+EN=The Id of the tilemap element for which you wish to know the colmask of.
+
+KEY=func_param:lin_to_db:x
+EN=The value to convert.
+
+KEY=func_param:matrix_build:result_matrix
+EN=Optionally you can pass in the matrix in which you would like the result to be stored. This can provide better performance.
+
+KEY=func_param:matrix_build_lookat:result_matrix
+EN=Optionally you can pass in the matrix in which you would like the result to be stored. This can provide better performance.
+
+KEY=func_param:matrix_build_projection_ortho:result_matrix
+EN=Optionally you can pass in the matrix in which you would like the result to be stored. This can provide better performance.
+
+KEY=func_param:matrix_build_projection_perspective:height
+EN=The height of the projection at the near Z position.
+
+KEY=func_param:matrix_build_projection_perspective:result_matrix
+EN=Optionally you can pass in the matrix in which you would like the result to be stored. This can provide better performance.
+
+KEY=func_param:matrix_build_projection_perspective:width
+EN=The width of the projection at the near Z position.
+
+KEY=func_param:matrix_build_projection_perspective_fov:fov_y
+EN=The vertical angle of the field of view.
+
+KEY=func_param:matrix_build_projection_perspective_fov:result_matrix
+EN=Optionally you can pass in the matrix in which you would like the result to be stored. This can provide better performance.
+
+KEY=func_param:matrix_get:result_matrix
+EN=Optionally you can pass in the matrix in which you would like the result to be stored. This can provide better performance.
+
+KEY=func_param:matrix_inverse:matrix
+EN=The matrix to get the inverse of.
+
+KEY=func_param:matrix_inverse:result_matrix
+EN=Optionally you can pass in the matrix in which you would like the result to be stored. This can provide better performance.
+
+KEY=func_param:matrix_multiply:result_matrix
+EN=Optionally you can pass in the matrix in which you would like the result to be stored. This can provide better performance.
+
+KEY=func_param:matrix_transform_vertex:result_array
+EN=Optionally you can pass in the array in which you would like the result to be stored. This can provide better performance.
+
+KEY=func_param:matrix_transform_vertex:w
+EN=The w component of the transform vector
+
+KEY=func_param:max:val0
+EN=The first value to compare.
+
+KEY=func_param:mean:val0
+EN=The first value to use in computation.
+
+KEY=func_param:median:val0
+EN=The first value to use in computation.
+
+KEY=func_param:min:val0
+EN=The first value to compare.
+
+KEY=func_param:nameof:name
+EN=The name to convert to string.
+
+KEY=func_param:network_create_socket_ext:type
+EN=The type of socket connection to create.
+
+KEY=func_param:network_set_config:value1
+EN=The setting of the config value.
+
+KEY=func_param:network_set_config:value2
+EN=The setting of the config value.
+
+KEY=func_param:os_request_permission:permission
+EN=The permission to request
+
+KEY=func_param:part_emitter_delay:delay_max
+EN=The maximum length of the delay.
+
+KEY=func_param:part_emitter_delay:delay_min
+EN=The minimum length of the delay.
+
+KEY=func_param:part_emitter_delay:delay_unit
+EN=The units that the delay is measured in.
+
+KEY=func_param:part_emitter_delay:ind
+EN=The index of the emitter.
+
+KEY=func_param:part_emitter_delay:ps
+EN=The particle system that the emitter is in.
+
+KEY=func_param:part_emitter_enable:enable
+EN=Enable (true) or disable (false) the particle emitter.
+
+KEY=func_param:part_emitter_enable:ind
+EN=The index of the emitter to enable or disable.
+
+KEY=func_param:part_emitter_enable:ps
+EN=The particle system that the emitter is in.
+
+KEY=func_param:part_emitter_interval:ind
+EN=The index of the emitter.
+
+KEY=func_param:part_emitter_interval:interval_max
+EN=The maximum length of the interval.
+
+KEY=func_param:part_emitter_interval:interval_min
+EN=The minimum length of the interval.
+
+KEY=func_param:part_emitter_interval:interval_unit
+EN=The units that the interval is measured in.
+
+KEY=func_param:part_emitter_interval:ps
+EN=The particle system that the emitter is in.
+
+KEY=func_param:part_emitter_relative:enable
+EN=Enable (true) or disable (false) relative mode.
+
+KEY=func_param:part_emitter_relative:ind
+EN=The index of the emitter.
+
+KEY=func_param:part_emitter_relative:ps
+EN=The particle system that the emitter is in.
+
+KEY=func_param:part_particles_burst:ind
+EN=The index of the particle system.
+
+KEY=func_param:part_particles_burst:partsys
+EN=The particle system asset to burst.
+
+KEY=func_param:part_particles_burst:x
+EN=The x coordinate of where to burst the particles.
+
+KEY=func_param:part_particles_burst:y
+EN=The y coordinate of where to burst the particles.
+
+KEY=func_param:part_particles_create_color:color
+EN=The color blending for the particles.
+
+KEY=func_param:part_system_angle:angle
+EN=The new rotation of the particle system in degrees.
+
+KEY=func_param:part_system_angle:ind
+EN=The index of the particle system to change the rotation of.
+
+KEY=func_param:part_system_color:alpha
+EN=The new alpha of the particle system (from 0 to 1 where 0 is transparent and 1 opaque).
+
+KEY=func_param:part_system_color:color
+EN=The new color with which to blend the particle system. c_white is to display it normally.
+
+KEY=func_param:part_system_color:ind
+EN=The index of the particle system to change the color and alpha of.
+
+KEY=func_param:part_system_colour:alpha
+EN=The new alpha of the particle system (from 0 to 1 where 0 is transparent and 1 opaque).
+
+KEY=func_param:part_system_colour:colour
+EN=The new colour with which to blend the particle system. c_white is to display it normally.
+
+KEY=func_param:part_system_colour:ind
+EN=The index of the particle system to change the colour and alpha of.
+
+KEY=func_param:part_system_drawit:ind
+EN=The index of the particle system to draw.
+
+KEY=func_param:part_system_get_info:partsys
+EN=The particle system for which information should be retrieved.
+
+KEY=func_param:part_system_global_space:enable
+EN=Enable (true) or disable (false) global space particles.
+
+KEY=func_param:part_system_global_space:ind
+EN=The index of the particle system.
+
+KEY=func_param:part_type_size_x:ind
+EN=The index of the particle type to change.
+
+KEY=func_param:part_type_size_x:size_incr
+EN=How much the particle should increase or decrease on the x axis per step.
+
+KEY=func_param:part_type_size_x:size_max
+EN=The maximum size the particle can start at on the x axis.
+
+KEY=func_param:part_type_size_x:size_min
+EN=The minimum size the particle can start at on the x axis.
+
+KEY=func_param:part_type_size_x:size_wiggle
+EN=How much should randomly be added or subtracted from the particles size on the x axis per step.
+
+KEY=func_param:part_type_size_y:ind
+EN=The index of the particle type to change.
+
+KEY=func_param:part_type_size_y:size_incr
+EN=How much the particle should increase or decrease on the y axis per step.
+
+KEY=func_param:part_type_size_y:size_max
+EN=The maximum size the particle can start at on the y axis.
+
+KEY=func_param:part_type_size_y:size_min
+EN=The minimum size the particle can start at on the y axis.
+
+KEY=func_param:part_type_size_y:size_wiggle
+EN=How much should randomly be added or subtracted from the particles size on the y axis per step.
+
+KEY=func_param:part_type_subimage:ind
+EN=The index of the particle type to change.
+
+KEY=func_param:part_type_subimage:subimg
+EN=The sub-image (frame) of the sprite to use.
+
+KEY=func_param:particle_add:info
+EN=The info struct to create a new particle system asset from.
+
+KEY=func_param:particle_delete:ind
+EN=The particle system asset to delete.
+
+KEY=func_param:particle_exists:ind
+EN=The index of the particle system asset to check for.
+
+KEY=func_param:particle_get_info:partsys
+EN=The particle system for which information should be retrieved.
+
+KEY=func_param:physics_debug:enable
+EN=Enable or Disable errors and messages
+
+KEY=func_param:physics_fixture_set_box_shape:half_height
+EN=the half height of the box
+
+KEY=func_param:physics_fixture_set_box_shape:half_width
+EN=the half width of the box
+
+KEY=func_param:physics_raycast:all_hits
+EN=set to true if you want all hits returned, false if you want the closest hit only - defaults to false
+
+KEY=func_param:physics_raycast:ids
+EN=instance or object id (or an array of instance or object ids) to check the ray against, these should have physics fixtures
+
+KEY=func_param:physics_raycast:max_fraction
+EN=proportion of the ray to check, defaults to 1.0, can be set to be smaller or larger
+
+KEY=func_param:physics_raycast:xEnd
+EN=x position of the start of the ray.
+
+KEY=func_param:physics_raycast:xStart
+EN=x position of the start of the ray.
+
+KEY=func_param:physics_raycast:yEnd
+EN=y position of the start of the ray.
+
+KEY=func_param:physics_raycast:yStart
+EN=y position of the start of the ray.
+
+KEY=func_param:ref_create:dbgrefOrName
+EN=reference to the index variable or the name of the variable to dereference.
+
+KEY=func_param:ref_create:dbgrefOrStruct
+EN=reference to the thing to derefernce
+
+KEY=func_param:ref_create:index
+EN=Index value to use for array references.
+
+KEY=func_param:room_get_info:index
+EN=The index of the room.
+
+KEY=func_param:room_get_info:instances
+EN=Add instance information to the struct (defaults to true)
+
+KEY=func_param:room_get_info:layer_elements
+EN=Add layer element information to the struct (defaults to true), NOTE: you must have layers enabled to get any layer_elements
+
+KEY=func_param:room_get_info:layers
+EN=Add room layer information to the struct (defaults to true)
+
+KEY=func_param:room_get_info:live
+EN=if you request the current room then if this is true (default is false) it will report the live data for the current room, otherwise it is the data from the WAD
+
+KEY=func_param:room_get_info:tilemap_data
+EN=Add tilemap data information to the struct (defaults to true), NOTE: you must have layers and layer_elements enabled to get any tilemap_data (if present)
+
+KEY=func_param:room_get_info:views
+EN=Add room view information to the struct (defaults to true)
+
+KEY=func_param:show_debug_log:enable
+EN=switch on (true) or off (false) the debug overlay.
+
+KEY=func_param:show_debug_overlay:alpha
+EN=alpha level of the debug windows. NOTE: clamped to between 0 and 1
+
+KEY=func_param:show_debug_overlay:gamepad_enable
+EN=enabled or disables gamepad input within the debug  overlay (defaults to enabled)
+
+KEY=func_param:show_debug_overlay:gamepad_index
+EN=index of the gamepad to restrict debug overly input to or -1 (default) for all gamepads
+
+KEY=func_param:show_debug_overlay:minimised
+EN=if true then FPS is opened minimised (default) or false for full size 
+
+KEY=func_param:show_debug_overlay:scale
+EN=scale of the debug display. NOTE: clamped to between 0.5 and 4
+
+KEY=func_param:skeleton_animation_clear:duration
+EN=How long animating the skeleton back to setup pose will take.
+
+KEY=func_param:skeleton_animation_clear:reset
+EN=Whether to reset the skeleton to setup pose (defaults to false).
+
+KEY=func_param:skeleton_attachment_create_color:color
+EN=The color value to use (A constant, integer or hex value).
+
+KEY=func_param:skeleton_slot_color_set:color
+EN=The color to set, either an integer, a constant, or a hex value.
+
+KEY=func_param:sphere_is_visible:r
+EN=The radius of the sphere to check.
+
+KEY=func_param:sphere_is_visible:x
+EN=The x position to check.
+
+KEY=func_param:sphere_is_visible:y
+EN=The y position to check.
+
+KEY=func_param:sphere_is_visible:z
+EN=The z position to check.
+
+KEY=func_param:sprite_add_ext:fname
+EN=The name (a string file path) of the file to add.
+
+KEY=func_param:sprite_add_ext:imgnum
+EN=Use to indicate the number of sub-images (1 for a single image or for a *.gif).
+
+KEY=func_param:sprite_add_ext:prefetch
+EN=Indicates whether the sprite should be loaded to GPU memory.
+
+KEY=func_param:sprite_add_ext:xorig
+EN=Indicate the x position of the origin in the sprite.
+
+KEY=func_param:sprite_add_ext:yorig
+EN=Indicate the y position of the origin in the sprite.
+
+KEY=func_param:sprite_get_convex_hull:index
+EN=The index of the sprite to generate the convex hull of.
+
+KEY=func_param:sprite_get_convex_hull:max_pts
+EN=Use this parameter to specify the maximum number of points that can be returned. (If you are intending to generate a physics polygon shape from the points the maximum is 32)
+
+KEY=func_param:sprite_get_convex_hull:subimg
+EN=Use this parameter to specify a specific sprite sub-index to use (defaults to 0)
+
+KEY=func_param:struct_exists:name
+EN=The name of the struct variable to check for (as a string)
+
+KEY=func_param:struct_exists:struct
+EN=The struct reference to check
+
+KEY=func_param:struct_exists_from_hash:hash
+EN=The hash of the struct variable to check for
+
+KEY=func_param:struct_exists_from_hash:struct
+EN=The struct reference to check
+
+KEY=func_param:struct_foreach:func
+EN=the function to execute on each member of the struct; the callback function can accept the following arguments - key and value (in this order).
+
+KEY=func_param:struct_foreach:struct
+EN=The variable that holds the struct.
+
+KEY=func_param:struct_get:name
+EN=The name of the variable to get
+
+KEY=func_param:struct_get:struct
+EN=The struct reference to use
+
+KEY=func_param:struct_get_from_hash:hash
+EN=The hash of the variable being accessed (returned from variable_get_hash())
+
+KEY=func_param:struct_get_from_hash:struct
+EN=The struct reference to use
+
+KEY=func_param:struct_get_names:struct
+EN=The struct reference to check.
+
+KEY=func_param:struct_names_count:struct_id
+EN=The unique ID value of the struct to check.
+
+KEY=func_param:struct_remove:name
+EN=The name of the variable to remove
+
+KEY=func_param:struct_remove:struct
+EN=The struct reference to remove the variable from
+
+KEY=func_param:struct_remove_from_hash:hash
+EN=The hash of the variable being removed (returned from 'variable_get_hash')
+
+KEY=func_param:struct_remove_from_hash:struct
+EN=The struct reference to remove the variable from
+
+KEY=func_param:struct_set:name
+EN=The name of the variable to set
+
+KEY=func_param:struct_set:struct
+EN=The struct reference to set
+
+KEY=func_param:struct_set:val
+EN=The value to set the variable to
+
+KEY=func_param:struct_set_from_hash:hash
+EN=The hash of the variable being set (returned from 'variable_get_hash')
+
+KEY=func_param:struct_set_from_hash:struct
+EN=The struct reference to set
+
+KEY=func_param:struct_set_from_hash:val
+EN=The value to set the variable to
+
+KEY=func_param:surface_get_format:surface_id
+EN=The ID of the surface to get the format of
+
+KEY=func_param:surface_get_texture_depth:surface_id
+EN=The ID of the surface to get the depth buffer texture of.
+
+KEY=func_param:surface_has_depth:surface_id
+EN=The ID of the surface to check.
+
+KEY=func_param:surface_set_target:depth_id
+EN=The ID of the surface whose depth buffer to use as the current depth buffer.
+
+KEY=func_param:texturegroup_add:filename_or_buffer_or_array
+EN=filename or buffer reference for the image file to use or an array of filenames or buffer references for the images
+
+KEY=func_param:texturegroup_add:groupname
+EN=The name of the texture group to add
+
+KEY=func_param:texturegroup_add:struct_or_json
+EN=description of how assets (sprites) are to be created from the image files
+
+KEY=func_param:texturegroup_delete:groupname
+EN=The name of the texture group to add
+
+KEY=func_param:texturegroup_exists:groupname
+EN=The name of the texture group to check
+
+KEY=func_param:variable_clone:depth
+EN=The depth to be used during the cloning process (defaults to the maximum of 128)
+
+KEY=func_param:variable_clone:value
+EN=The value to be cloned
+
+KEY=func_param:variable_get_hash:name
+EN=The name of the variable to compute the hash of
+
+KEY=func_param:vector_sprite_cache_limit:limit
+EN=The cache size in bytes.
+
+KEY=func_param:vector_sprite_cache_prune_age:frames
+EN=The number of frames a cache entry can be unused for before being considered for deletion.
+
+KEY=func_param:vector_sprite_cache_prune_fraction:fraction
+EN=The fraction of the cache size to clear (a value between 0.0 and 1.0).
+
+KEY=func_param:vertex_buffer_exists:buffer
+EN=The index of the buffer to check.
+
+KEY=func_param:vertex_format_get_info:format_id
+EN=The vertex format for which information should be retrieved.
+
+KEY=func_param:vertex_submit_ext:buffer
+EN=The buffer to use.
+
+KEY=func_param:vertex_submit_ext:number
+EN=Number of vertices to submit. Use -1 to submit all vertices after given offset.
+
+KEY=func_param:vertex_submit_ext:offset
+EN=The index of the first vertex to submit. Must be a positive number.
+
+KEY=func_param:vertex_submit_ext:primitive
+EN=The primitive base type.
+
+KEY=func_param:vertex_submit_ext:texture
+EN=The texture to use (or -1 for no texture).
+
+KEY=func_param:vertex_update_buffer_from_buffer:dest_offset
+EN=The offset (in bytes) within the vertex buffer to copy to.
+
+KEY=func_param:vertex_update_buffer_from_buffer:dest_vbuff
+EN=The vertex buffer to copy to.
+
+KEY=func_param:vertex_update_buffer_from_buffer:src_buffer
+EN=The buffer to copy data from.
+
+KEY=func_param:vertex_update_buffer_from_buffer:src_offset
+EN=The offset (in bytes) within the buffer to copy from.
+
+KEY=func_param:vertex_update_buffer_from_buffer:src_size
+EN=The size (in bytes) of data to be copied.
+
+KEY=func_param:vertex_update_buffer_from_vertex:dest_vbuff
+EN=The destination vertex buffer to copy to.
+
+KEY=func_param:vertex_update_buffer_from_vertex:dest_vert
+EN=The index of the first vertex within the destination vertex buffer to copy to.
+
+KEY=func_param:vertex_update_buffer_from_vertex:src_vbuff
+EN=The source vertex buffer to copy vertices from.
+
+KEY=func_param:vertex_update_buffer_from_vertex:src_vert
+EN=The index of the first vertex to copy from the source vertex buffer.
+
+KEY=func_param:vertex_update_buffer_from_vertex:src_vert_num
+EN=The number of vertices to copy.
+
+KEY=func_param:view_get_camera:viewport
+EN=The viewport to target (0 - 7)
+
+KEY=func_param:view_get_hport:viewport
+EN=The viewport to target (0 - 7)
+
+KEY=func_param:view_get_surface_id:viewport
+EN=The viewport to target (0 - 7)
+
+KEY=func_param:view_get_visible:viewport
+EN=The viewport to target (0 - 7)
+
+KEY=func_param:view_get_wport:viewport
+EN=The viewport to target (0 - 7)
+
+KEY=func_param:view_get_xport:viewport
+EN=The viewport to target (0 - 7)
+
+KEY=func_param:view_get_yport:viewport
+EN=The viewport to target (0 - 7)
+
+KEY=func_param:view_set_camera:viewport
+EN=The viewport to target (0 - 7)
+
+KEY=func_param:view_set_hport:viewport
+EN=The viewport to target (0 - 7)
+
+KEY=func_param:view_set_surface_id:viewport
+EN=The viewport to target (0 - 7)
+
+KEY=func_param:view_set_visible:viewport
+EN=The viewport to target (0 - 7)
+
+KEY=func_param:view_set_wport:viewport
+EN=The viewport to target (0 - 7)
+
+KEY=func_param:view_set_xport:viewport
+EN=The viewport to target (0 - 7)
+
+KEY=func_param:view_set_yport:viewport
+EN=The viewport to target (0 - 7)
+
+KEY=func_param:wallpaper_set_config:default
+EN=Config
+
+KEY=func_param:wallpaper_set_subscriptions:default
+EN=Subscriptions
+
+KEY=func_param:window_enable_borderless_fullscreen:enable
+EN=Whether to enable borderless fullscreen mode (true) or not (false).
+
+KEY=func_param:window_mouse_set_locked:enable
+EN=Enable (true) or disable (false) mouse lock.
+
+KEY=func_param:window_post_message:message
+EN=The message to be passed to the host window
+
+KEY=func_param:window_set_color:color
+EN=The color to set for the region.
+
+KEY=func_param:window_set_showborder:show
+EN=Whether to show the window border (true) or not (false).
+
+KEY=func_param:zip_add_file:dest
+EN=The destination path within the zip file.
+
+KEY=func_param:zip_add_file:src
+EN=The path to the source file to be added.
+
+KEY=func_param:zip_add_file:zip_object
+EN=The zip object which the file should be added to.
+
+KEY=func_param:zip_save:path
+EN=The path the zip should be saved to.
+
+KEY=func_param:zip_save:zip_object
+EN=The zip object to be saved.
+
+KEY=func_param:zip_unzip_async:target_directory
+EN=The target directory to extract the files to
+
+KEY=func_param:zip_unzip_async:zip_file
+EN=The zip file to open
+
